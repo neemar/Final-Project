@@ -46,7 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\RameenIsDonezo.cs" />
+     <Compile Include="Assets\Scripts\arrowKeysMovement.cs" />
+     <Compile Include="Assets\Scripts\thoughtBubbles.cs" />
+     <Compile Include="Assets\Scripts\wasdMovement.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
