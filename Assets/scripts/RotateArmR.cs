@@ -10,11 +10,11 @@ public class RotateArmR : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.I)) {
-			transform.Rotate (new Vector3 ( 0f, 0f, 15f));
+		if (Input.GetKey(KeyCode.I)) {
+			transform.Rotate (new Vector3 ( 0f, 0f, 2f));
 		}
-		if (Input.GetKeyDown(KeyCode.K)) {
-			transform.Rotate (new Vector3 ( 0f, 0f, -15f));
+		if (Input.GetKey(KeyCode.K)) {
+			transform.Rotate (new Vector3 ( 0f, 0f, -2f));
 		} 
 	}
 }
