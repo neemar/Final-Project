@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RameenIsDonezo : MonoBehaviour {
+public class thoughtBubbles : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -10,7 +10,6 @@ public class RameenIsDonezo : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		int rameenIsDonezo = 0;
-		//lolololololo
+	
 	}
 }
