@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\wasdMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\Animation\Assets\SphereInput.cs">
     <Files>
-      <File FileName="Assets\scripts\wasdMovement.cs" Line="26" Column="52" />
+      <File FileName="..\Animation\Assets\SphereInput.cs" Line="25" Column="71" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
