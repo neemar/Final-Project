@@ -45,19 +45,22 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\GameManager.cs" />
+     <Compile Include="Assets\scripts\RotateArmL.cs" />
+     <Compile Include="Assets\scripts\RotateArmR.cs" />
+     <Compile Include="Assets\scripts\RotateHip.cs" />
      <Compile Include="Assets\scripts\arrowKeysMovement.cs" />
+     <Compile Include="Assets\scripts\player1Scissors.cs" />
+     <Compile Include="Assets\scripts\raycas.cs" />
+     <Compile Include="Assets\scripts\rigibidoe.cs" />
+     <Compile Include="Assets\scripts\thoughtBubbles.cs" />
+     <Compile Include="Assets\scripts\uhh.cs" />
      <Compile Include="Assets\scripts\wasdMovement.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>D:/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

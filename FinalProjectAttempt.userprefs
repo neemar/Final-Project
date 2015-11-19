@@ -1,8 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\Animation\Assets\SphereInput.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\player1Scissors.cs">
     <Files>
-      <File FileName="..\Animation\Assets\SphereInput.cs" Line="25" Column="71" />
+      <File FileName="Assets\scripts\player1Scissors.cs" Line="6" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
