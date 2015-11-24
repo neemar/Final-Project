@@ -9,14 +9,16 @@ public class player1Scissors : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if ((scissors.position - transform.position).magnitude < 5f && Input.GetKeyDown (KeyCode.E)){
+		if (scissors!= null && (scissors.position - transform.position).magnitude < 5f && Input.GetKeyDown (KeyCode.E)){
 			hasScissors = true; 
-			GameObject.Destroy (scissors);  
+			Destroy(scissors.gameObject); 
 
 		}
-		if ((cord.position - transform.position).magnitude < 5f && hasScissors){
+
+		if (cord!= null && (cord.position - transform.position).magnitude < 10f && hasScissors && Input.GetKeyDown (KeyCode.E)){
+		
 			hasScissors = false;
-			GameObject.Destroy (cord); 
+			Destroy (cord.gameObject); 
 
 		}
 
