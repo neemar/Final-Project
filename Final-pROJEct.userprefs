@@ -1,9 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/RotateArmL.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/RestartGame.cs">
     <Files>
-      <File FileName="Assets/scripts/RotateArmL.cs" Line="13" Column="19" />
-      <File FileName="../Desktop/CatnMouseGen/Assets/Scripts/Wallmaker.cs" Line="27" Column="3" />
+      <File FileName="Assets/scripts/StuffBreaking.cs" Line="1" Column="1" />
+      <File FileName="../Midterm/Assets/Script/VisionCone.cs" Line="1" Column="1" />
+      <File FileName="../Midterm/Assets/Script/RestartButton.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/RestartGame.cs" Line="21" Column="22" />
+      <File FileName="../Midterm/Assets/Script/Hints.cs" Line="3" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
