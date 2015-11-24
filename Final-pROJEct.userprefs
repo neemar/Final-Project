@@ -1,9 +1,20 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SCRIPT\rigibidoe.cs">
     <Files>
       <File FileName="Assets\SCRIPT\TESTmovement.cs" Line="9" Column="1" />
       <File FileName="Assets\SCRIPT\rigibidoe.cs" Line="40" Column="57" />
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/RestartGame.cs">
+    <Files>
+      <File FileName="Assets/scripts/StuffBreaking.cs" Line="1" Column="1" />
+      <File FileName="../Midterm/Assets/Script/VisionCone.cs" Line="1" Column="1" />
+      <File FileName="../Midterm/Assets/Script/RestartButton.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/RestartGame.cs" Line="21" Column="22" />
+      <File FileName="../Midterm/Assets/Script/Hints.cs" Line="3" Column="1" />
+>>>>>>> origin/master
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

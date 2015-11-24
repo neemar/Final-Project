@@ -6,7 +6,7 @@
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
 	<RootNamespace></RootNamespace>
-	<ProjectGuid>{E57BB834-EFC1-6750-8B94-9E5341D90109}</ProjectGuid>
+	<ProjectGuid>{6F23C62B-277D-FC02-CB89-7487FDE32254}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<AssemblyName>Assembly-CSharp</AssemblyName>
@@ -38,13 +38,14 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>D:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
      <Compile Include="Assets\Image Sequence Playback\Scripts\Examples\audioExample.cs" />
      <Compile Include="Assets\Image Sequence Playback\Scripts\Examples\materialMode.cs" />
      <Compile Include="Assets\Image Sequence Playback\Scripts\Examples\textureMode.cs" />
@@ -56,17 +57,30 @@
      <Compile Include="Assets\SCRIPT\rigibidoe.cs" />
      <Compile Include="Assets\SCRIPT\uhh.cs" />
      <None Include="Assets\Image Sequence Playback\changelog.txt" />
+=======
+     <Compile Include="Assets\scripts\GameManager.cs" />
+     <Compile Include="Assets\scripts\RotateArmL.cs" />
+     <Compile Include="Assets\scripts\RotateArmR.cs" />
+     <Compile Include="Assets\scripts\RotateHip.cs" />
+     <Compile Include="Assets\scripts\arrowKeysMovement.cs" />
+     <Compile Include="Assets\scripts\player1Scissors.cs" />
+     <Compile Include="Assets\scripts\raycas.cs" />
+     <Compile Include="Assets\scripts\rigibidoe.cs" />
+     <Compile Include="Assets\scripts\thoughtBubbles.cs" />
+     <Compile Include="Assets\scripts\uhh.cs" />
+     <Compile Include="Assets\scripts\wasdMovement.cs" />
+>>>>>>> origin/master
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
+ <HintPath>D:/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ <HintPath>D:/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
