@@ -23,7 +23,7 @@ public class Inventory : MonoBehaviour {
 			//if inventory is not open, then open it
 			if (Input.GetKeyDown (KeyCode.I)) {
 				if (oneOpen == false) {
-					playerOneInventory.text = "";
+					playerOneInventory.text = "Inventory\n";
 					for (int i=0; i<NPCText.inventoryOne.Count; i++) {
 						playerOneInventory.text += NPCText.inventoryOne[i] + "\n";
 					}
@@ -41,7 +41,7 @@ public class Inventory : MonoBehaviour {
 			//if inventory is closed, open it
 			if (Input.GetKeyDown (KeyCode.Q)) {
 				if (twoOpen == false) {
-					playerTwoInventory.text = "";
+					playerTwoInventory.text = "Inventory\n";
 					for (int i=0; i<NPCText.inventoryTwo.Count; i++) {
 						playerTwoInventory.text += NPCText.inventoryTwo[i] + "\n";
 					}

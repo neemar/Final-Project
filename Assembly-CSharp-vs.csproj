@@ -58,6 +58,7 @@
      <Compile Include="Assets\scripts\RotateArmR.cs" />
      <Compile Include="Assets\scripts\RotateHip.cs" />
      <Compile Include="Assets\scripts\ScoreManager.cs" />
+     <Compile Include="Assets\scripts\TVInteraction.cs" />
      <Compile Include="Assets\scripts\arrowKeysMovement.cs" />
      <Compile Include="Assets\scripts\destroy.cs" />
      <Compile Include="Assets\scripts\jump.cs" />

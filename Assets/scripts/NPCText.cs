@@ -24,7 +24,27 @@ public class NPCText : MonoBehaviour {
 			//npcTextPrefab.text = "LOL";
 			Debug.DrawRay ( playerRay.origin, playerRay.direction * hit.distance, Color.green);
 			if (hit.transform.gameObject.tag == "TV") {
-				npcTextPrefab.text = "Need a sisscor to cut the wires";
+				//if playerone has scissors and presses K
+				if (transform.tag == "PlayerOne" && inventoryOne.Contains("Scissors")) {
+					npcTextPrefab.text = "Press K to cut TV wires.";
+					//gain 10 points and destroy tv
+					if (Input.GetKeyDown (KeyCode.K)) {
+						ScoreManager.playerOneScore += 10;
+						Destroy (hit.transform.gameObject);
+					}
+				}
+				//if playertwo has scissors and presses r
+				else if (transform.tag == "PlayerTwo" && inventoryTwo.Contains ("Scissors")) {
+					npcTextPrefab.text = "Press R to cut TV wires.";
+					//gain 10 points and destroy tv
+					if (Input.GetKeyDown (KeyCode.R)) {
+						ScoreManager.playerTwoScore += 10;
+						Destroy (hit.transform.gameObject);
+					}
+				}
+				else {
+					npcTextPrefab.text = "Need a sisscor to cut the wires";
+				}
 			}
 			else if (hit.transform.gameObject.tag == "NPC") {
 				npcTextPrefab.text = "Hello";
