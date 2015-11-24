@@ -45,24 +45,43 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Image Sequence Playback\Scripts\Examples\audioExample.cs" />
+     <Compile Include="Assets\Image Sequence Playback\Scripts\Examples\materialMode.cs" />
+     <Compile Include="Assets\Image Sequence Playback\Scripts\Examples\textureMode.cs" />
+     <Compile Include="Assets\Image Sequence Playback\Scripts\Playback.cs" />
+     <Compile Include="Assets\Maya\animatoe.cs" />
+     <Compile Include="Assets\SCRIPT\TESTmovement.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Interactions.cs" />
+     <Compile Include="Assets\Scripts\Inventory.cs" />
+     <Compile Include="Assets\Scripts\InventoryGUI.cs" />
+     <Compile Include="Assets\Scripts\ObjectBreaking.cs" />
      <Compile Include="Assets\Scripts\RestartGame.cs" />
      <Compile Include="Assets\Scripts\RotateArmL.cs" />
      <Compile Include="Assets\Scripts\RotateArmR.cs" />
      <Compile Include="Assets\Scripts\RotateHip.cs" />
+     <Compile Include="Assets\Scripts\ScoreManager.cs" />
      <Compile Include="Assets\Scripts\StuffBreaking.cs" />
      <Compile Include="Assets\Scripts\arrowKeysMovement.cs" />
+     <Compile Include="Assets\Scripts\destroy.cs" />
+     <Compile Include="Assets\Scripts\jump.cs" />
      <Compile Include="Assets\Scripts\player1Scissors.cs" />
      <Compile Include="Assets\Scripts\raycas.cs" />
      <Compile Include="Assets\Scripts\rigibidoe.cs" />
-     <Compile Include="Assets\Scripts\thoughtBubbles.cs" />
      <Compile Include="Assets\Scripts\uhh.cs" />
      <Compile Include="Assets\Scripts\wasdMovement.cs" />
+     <None Include="Assets\Image Sequence Playback\changelog.txt" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
