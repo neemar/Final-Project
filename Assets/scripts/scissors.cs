@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class player1Scissors : MonoBehaviour {
-	public Transform scissors; 
+public class scissors : MonoBehaviour {
+	public Transform skizzors; 
 	public Transform cord; 
 	bool hasScissors = false; 
 
 	
 	// Update is called once per frame
 	void Update () {
-		if ((scissors.position - transform.position).magnitude < 5f && Input.GetKeyDown (KeyCode.E)){
+		if ((skizzors.position - transform.position).magnitude < 5f && Input.GetKeyDown (KeyCode.E)){
 			hasScissors = true; 
-			GameObject.Destroy (scissors);  
+			GameObject.Destroy (skizzors);  
 
 		}
 		if ((cord.position - transform.position).magnitude < 5f && hasScissors){

@@ -11,11 +11,11 @@ public class wasdMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.W)) {
-			transform.Translate(new Vector3(0f, 0f, 10f * Time.deltaTime)); 
+			transform.Translate(new Vector3(0f, 0f, 45f * Time.deltaTime)); 
 			
 		}
 		if (Input.GetKey (KeyCode.S)) {
-			transform.Translate (new Vector3(0f, 0f, -10f * Time.deltaTime)); 
+			transform.Translate (new Vector3(0f, 0f, -45f * Time.deltaTime)); 
 			
 		}
 		if (Input.GetKey (KeyCode.A)) {
