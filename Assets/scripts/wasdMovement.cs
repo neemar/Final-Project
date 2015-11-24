@@ -19,11 +19,11 @@ public class wasdMovement : MonoBehaviour {
 			
 		}
 		if (Input.GetKey (KeyCode.A)) {
-			transform.localEulerAngles += new Vector3(0f, -10f, 0f);
+			transform.localEulerAngles += new Vector3(0f, -5f, 0f);
 			
 		}
 		if (Input.GetKey (KeyCode.D)) {
-			transform.localEulerAngles += new Vector3(0f, 10f, 0f); 
+			transform.localEulerAngles += new Vector3(0f, 5f, 0f); 
 			
 		}
 	}

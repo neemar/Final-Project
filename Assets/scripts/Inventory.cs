@@ -24,8 +24,8 @@ public class Inventory : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.I)) {
 				if (oneOpen == false) {
 					playerOneInventory.text = "Inventory\n";
-					for (int i=0; i<NPCText.inventoryOne.Count; i++) {
-						playerOneInventory.text += NPCText.inventoryOne[i] + "\n";
+					for (int i=0; i<Interactions.inventoryOne.Count; i++) {
+						playerOneInventory.text += Interactions.inventoryOne[i] + "\n";
 					}
 					oneOpen = true;
 				}
@@ -42,8 +42,8 @@ public class Inventory : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.Q)) {
 				if (twoOpen == false) {
 					playerTwoInventory.text = "Inventory\n";
-					for (int i=0; i<NPCText.inventoryTwo.Count; i++) {
-						playerTwoInventory.text += NPCText.inventoryTwo[i] + "\n";
+					for (int i=0; i<Interactions.inventoryTwo.Count; i++) {
+						playerTwoInventory.text += Interactions.inventoryTwo[i] + "\n";
 					}
 					twoOpen = true;
 				}

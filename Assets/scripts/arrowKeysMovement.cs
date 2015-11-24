@@ -23,11 +23,11 @@ public class arrowKeysMovement : MonoBehaviour {
 			
 		}
 		if (Input.GetKey (KeyCode.LeftArrow)) {
-			transform.localEulerAngles += new Vector3(0f, -10f, 0f);
+			transform.localEulerAngles += new Vector3(0f, -5f, 0f);
 			
 		}
 		if (Input.GetKey (KeyCode.RightArrow)) {
-			transform.localEulerAngles += new Vector3(0f, 10f, 0f); 
+			transform.localEulerAngles += new Vector3(0f, 5f, 0f); 
 			
 		}
 	}

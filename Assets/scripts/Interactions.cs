@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class NPCText : MonoBehaviour {
+public class Interactions : MonoBehaviour {
 
 	public Text npcTextPrefab;
 	public static List<string> inventoryOne = new List<string>();
@@ -29,6 +29,7 @@ public class NPCText : MonoBehaviour {
 					npcTextPrefab.text = "Press K to cut TV wires.";
 					//gain 10 points and destroy tv
 					if (Input.GetKeyDown (KeyCode.K)) {
+						inventoryOne.Remove ("Scissors");
 						ScoreManager.playerOneScore += 10;
 						Destroy (hit.transform.gameObject);
 					}
@@ -38,12 +39,13 @@ public class NPCText : MonoBehaviour {
 					npcTextPrefab.text = "Press R to cut TV wires.";
 					//gain 10 points and destroy tv
 					if (Input.GetKeyDown (KeyCode.R)) {
+						inventoryTwo.Remove ("Scissors");
 						ScoreManager.playerTwoScore += 10;
 						Destroy (hit.transform.gameObject);
 					}
 				}
 				else {
-					npcTextPrefab.text = "Need a sisscor to cut the wires";
+					npcTextPrefab.text = "Need a pair of sisscors to cut the wires";
 				}
 			}
 			else if (hit.transform.gameObject.tag == "NPC") {
