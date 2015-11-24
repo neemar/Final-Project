@@ -8,9 +8,7 @@ public class RestartGame : MonoBehaviour {
 	bool isQuitting; 
 
 	void OnStart () {
-
 		isQuitting = false;
-
 	}
 	
 	void Update () {
