@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class Interactions : MonoBehaviour {
+public class TextInteractions : MonoBehaviour {
 
 	public Text npcTextPrefab;
 	public static List<string> inventoryOne = new List<string>();
@@ -20,7 +20,7 @@ public class Interactions : MonoBehaviour {
 
 		Ray playerRay = new Ray (transform.position, transform.forward);
 		RaycastHit hit = new RaycastHit();
-		if (Physics.Raycast (playerRay, out hit, 200f)) {
+		if (Physics.Raycast (playerRay, out hit, 100f)) {
 			//npcTextPrefab.text = "LOL";
 			Debug.DrawRay ( playerRay.origin, playerRay.direction * hit.distance, Color.green);
 			if (hit.transform.gameObject.tag == "TV") {
