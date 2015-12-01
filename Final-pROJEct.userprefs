@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Week 14/Assets/CoroutineDemo.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SCRIPT\COUROTine.cs">
     <Files>
-      <File FileName="../Week 14/Assets/CoroutineDemo.cs" Line="15" Column="168" />
+      <File FileName="Assets\scripts\StuffBreaking.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\ObjectBreaking.cs" Line="1" Column="1" />
+      <File FileName="Assets\SCRIPT\COUROTine.cs" Line="7" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
