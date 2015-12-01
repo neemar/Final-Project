@@ -46,21 +46,24 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\SCRIPT\GameManager.cs" />
-     <Compile Include="Assets\SCRIPT\raycas.cs" />
-     <Compile Include="Assets\SCRIPT\rigibidoe.cs" />
-     <Compile Include="Assets\SCRIPT\uhh.cs" />
+     <Compile Include="Assets\scripts\GameManager.cs" />
      <Compile Include="Assets\scripts\Interactions.cs" />
      <Compile Include="Assets\scripts\Inventory.cs" />
      <Compile Include="Assets\scripts\InventoryGUI.cs" />
      <Compile Include="Assets\scripts\ObjectBreaking.cs" />
+     <Compile Include="Assets\scripts\RestartGame.cs" />
      <Compile Include="Assets\scripts\RotateArmL.cs" />
      <Compile Include="Assets\scripts\RotateArmR.cs" />
      <Compile Include="Assets\scripts\RotateHip.cs" />
      <Compile Include="Assets\scripts\ScoreManager.cs" />
+     <Compile Include="Assets\scripts\StuffBreaking.cs" />
      <Compile Include="Assets\scripts\arrowKeysMovement.cs" />
      <Compile Include="Assets\scripts\destroy.cs" />
      <Compile Include="Assets\scripts\jump.cs" />
+     <Compile Include="Assets\scripts\player1Scissors.cs" />
+     <Compile Include="Assets\scripts\raycas.cs" />
+     <Compile Include="Assets\scripts\rigibidoe.cs" />
+     <Compile Include="Assets\scripts\uhh.cs" />
      <Compile Include="Assets\scripts\wasdMovement.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
