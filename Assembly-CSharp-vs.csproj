@@ -46,22 +46,35 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\SCRIPT\GameManager.cs" />
-     <Compile Include="Assets\SCRIPT\raycas.cs" />
-     <Compile Include="Assets\SCRIPT\rigibidoe.cs" />
-     <Compile Include="Assets\SCRIPT\uhh.cs" />
-     <Compile Include="Assets\scripts\Interactions.cs" />
+     <Compile Include="Assets\Image Sequence Playback\Scripts\Examples\audioExample.cs" />
+     <Compile Include="Assets\Image Sequence Playback\Scripts\Examples\materialMode.cs" />
+     <Compile Include="Assets\Image Sequence Playback\Scripts\Examples\textureMode.cs" />
+     <Compile Include="Assets\Image Sequence Playback\Scripts\Playback.cs" />
+     <Compile Include="Assets\Maya\animatoe.cs" />
+     <Compile Include="Assets\SCRIPT\TESTmovement.cs" />
+     <Compile Include="Assets\scripts\GameManager.cs" />
      <Compile Include="Assets\scripts\Inventory.cs" />
      <Compile Include="Assets\scripts\InventoryGUI.cs" />
      <Compile Include="Assets\scripts\ObjectBreaking.cs" />
+     <Compile Include="Assets\scripts\ObjectInteractions.cs" />
+     <Compile Include="Assets\scripts\PickUp.cs" />
+     <Compile Include="Assets\scripts\RestartGame.cs" />
      <Compile Include="Assets\scripts\RotateArmL.cs" />
      <Compile Include="Assets\scripts\RotateArmR.cs" />
      <Compile Include="Assets\scripts\RotateHip.cs" />
      <Compile Include="Assets\scripts\ScoreManager.cs" />
+     <Compile Include="Assets\scripts\StuffBreaking.cs" />
+     <Compile Include="Assets\scripts\TextInteractions.cs" />
+     <Compile Include="Assets\scripts\ToiletClogging.cs" />
      <Compile Include="Assets\scripts\arrowKeysMovement.cs" />
      <Compile Include="Assets\scripts\destroy.cs" />
      <Compile Include="Assets\scripts\jump.cs" />
+     <Compile Include="Assets\scripts\raycas.cs" />
+     <Compile Include="Assets\scripts\rigibidoe.cs" />
+     <Compile Include="Assets\scripts\scissors.cs" />
+     <Compile Include="Assets\scripts\uhh.cs" />
      <Compile Include="Assets\scripts\wasdMovement.cs" />
+     <None Include="Assets\Image Sequence Playback\changelog.txt" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
