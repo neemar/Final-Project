@@ -26,7 +26,10 @@ public class ObjectInteractions : MonoBehaviour {
 				//if player has object required to interact with TV then...
 				if (items.ContainsKey ("Scissors")) {
 					if (Input.GetKeyDown (KeyCode.K)) {
-						Destroy (hit.transform.gameObject);
+						Destroy (hit.transform.gameObject); 
+						Destroy (transform.Find ("Scissors").gameObject);
+						items.Remove ("Scissors");
+						//Destroy
 					}
 				}
 			}
