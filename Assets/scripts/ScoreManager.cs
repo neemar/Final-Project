@@ -14,7 +14,7 @@ public class ScoreManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//displays score
-		playerOneText.text = "Score: " + playerOneScore;
-		playerTwoText.text = "Score: " + playerTwoScore;
+		playerOneText.text = "" +playerOneScore;
+		playerTwoText.text = "" +playerTwoScore;
 	}
 }
