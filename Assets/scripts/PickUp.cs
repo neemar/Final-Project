@@ -24,7 +24,7 @@ public class PickUp : MonoBehaviour {
 			if (hit.transform.gameObject.tag == "Pickupable") {
 				//if player1 presses k, pick up item
 				if (transform.tag == "PlayerOne" && Input.GetKeyDown (KeyCode.E)) {
-					ObjectInteractions.items.Add ("Scissors", hit.transform);
+					ObjectInteractions.girlItems.Add ("Scissors", hit.transform);
 					hit.transform.parent = transform;
 					hit.collider.enabled = false;
 				//	LayerMask l = hit.transform.gameObject.layer;
@@ -32,7 +32,7 @@ public class PickUp : MonoBehaviour {
 				}
 				//if player2 presses e, pick up item
 				if (transform.tag == "PlayerTwo" && Input.GetKeyDown (KeyCode.K)) {
-					ObjectInteractions.items.Add ("Scissors", hit.transform);
+					LEFTobjInt.boyItems.Add ("Scissors", hit.transform);
 					hit.transform.parent = transform;
 					hit.collider.enabled = false;
 				//	LayerMask l = hit.transform.gameObject.layer;

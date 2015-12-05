@@ -26,7 +26,7 @@ public class TextInteractions : MonoBehaviour {
 			if (hit.transform.gameObject.tag == "TV") {
 				//if playerone has scissors and presses K
 				if (transform.tag == "PlayerOne" && inventoryOne.Contains("Scissors")) {
-					npcTextPrefab.text = "Press G to cut TV wires.";
+					npcTextPrefab.text = "Press E to cut TV wires.";
 					//gain 10 points and destroy tv
 					if (Input.GetKeyDown (KeyCode.G)) {
 						inventoryOne.Remove ("Scissors");

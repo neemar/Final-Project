@@ -4,13 +4,13 @@ using System.Collections.Generic;
 
 public class ObjectInteractions : MonoBehaviour {
 
-	public static Dictionary<string, Transform> items = new Dictionary<string, Transform>();
+	public static Dictionary<string, Transform> girlItems = new Dictionary<string, Transform>();
 
 	// Use this for initialization
 	void Start () {
 		//add all children to dictionary
 		foreach (Transform child in transform) {
-			items.Add (child.name, child);
+			girlItems.Add (child.name, child);
 		}
 	}
 	
@@ -24,11 +24,11 @@ public class ObjectInteractions : MonoBehaviour {
 			//if the item the raycast is hitting the TV
 			if (hit.transform.gameObject.tag == "TV") {
 				//if player has object required to interact with TV then...
-				if (items.ContainsKey ("Scissors")) {
-					if (Input.GetKeyDown (KeyCode.K)) {
+				if (girlItems.ContainsKey ("Scissors")) {
+					if (Input.GetKeyDown (KeyCode.E)) {
 						Destroy (hit.transform.gameObject); 
 						Destroy (transform.Find ("Scissors").gameObject);
-						items.Remove ("Scissors");
+						girlItems.Remove ("Scissors");
 						//Destroy
 					}
 				}
