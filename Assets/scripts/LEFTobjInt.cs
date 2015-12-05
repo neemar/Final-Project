@@ -4,13 +4,13 @@ using System.Collections.Generic;
 
 public class LEFTobjInt : MonoBehaviour {
 	
-	public static Dictionary<string, Transform> items = new Dictionary<string, Transform>();
+	public static Dictionary<string, Transform> boyItems = new Dictionary<string, Transform>();
 	
 	// Use this for initialization
 	void Start () {
 		//add all children to dictionary
 		foreach (Transform child in transform) {
-			items.Add (child.name, child);
+			boyItems.Add (child.name, child);
 		}
 	}
 	
@@ -24,11 +24,11 @@ public class LEFTobjInt : MonoBehaviour {
 			//if the item the raycast is hitting the TV
 			if (hit.transform.gameObject.tag == "TV") {
 				//if player has object required to interact with TV then...
-				if (items.ContainsKey ("Scissors")) {
-					if (Input.GetKeyDown (KeyCode.E)) {
+				if (boyItems.ContainsKey ("Scissors")) {
+					if (Input.GetKeyDown (KeyCode.K)) {
 						Destroy (hit.transform.gameObject); 
 						Destroy (transform.Find ("Scissors").gameObject);
-						items.Remove ("Scissors");
+						boyItems.Remove ("Scissors");
 						//Destroy
 					}
 				}
