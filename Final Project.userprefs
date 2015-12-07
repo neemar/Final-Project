@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Unity Projects/TestingForce/Assets/Scripts/move.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/wasdMovement.cs">
     <Files>
       <File FileName="../Unity Projects/TestingForce/Assets/Scripts/move.cs" Line="16" Column="63" />
+      <File FileName="Assets/scripts/wasdMovement.cs" Line="14" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
