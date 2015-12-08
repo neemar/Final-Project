@@ -54,12 +54,14 @@
      <Compile Include="Assets\Materials\Materials\elevatyor.cs" />
      <Compile Include="Assets\SCRIPT\COUROTine.cs" />
      <Compile Include="Assets\SCRIPT\TESTmovement.cs" />
+     <Compile Include="Assets\scripts\Character sPEECH\GUY1.cs" />
      <Compile Include="Assets\scripts\GameManager.cs" />
      <Compile Include="Assets\scripts\InstructionTransition.cs" />
      <Compile Include="Assets\scripts\Inventory.cs" />
      <Compile Include="Assets\scripts\InventoryGUI.cs" />
      <Compile Include="Assets\scripts\LEFTobjInt.cs" />
      <Compile Include="Assets\scripts\Menutransition.cs" />
+     <Compile Include="Assets\scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\scripts\ObjectBreaking.cs" />
      <Compile Include="Assets\scripts\ObjectInteractions.cs" />
      <Compile Include="Assets\scripts\PickUp.cs" />
@@ -83,17 +85,11 @@
      <Compile Include="Assets\scripts\wasdMovement.cs" />
      <None Include="Assets\Materials\Materials\Materials\champagne_limousines\Font-license-readme.txt" />
      <None Include="Assets\Image Sequence Playback\changelog.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>D:/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
