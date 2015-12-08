@@ -4,8 +4,8 @@ using System.Collections;
 public class GUY1 : MonoBehaviour {
 	public Transform leftperson;
 	public Transform rightperson;
-	public Text leftpersontext;
-	public Text rightpersontext;
+	//public Text leftpersontext;
+	//public Text rightpersontext;
 
 	// Use this for initialization
 
