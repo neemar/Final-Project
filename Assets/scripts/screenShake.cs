@@ -14,14 +14,14 @@ public class screenShake : MonoBehaviour {
 			int player = 0; 
 			StartCoroutine (shakeMe(player));
 			ObjectBreaking.girlGo = false; 
-		} else if (ObjectBreaking.boyGo) {
+		} 
+		else if (ObjectBreaking.boyGo) {
 			int player = 1;
 			StartCoroutine (shakeMe (player)); 
 			ObjectBreaking.boyGo = false; 
 		}
-
-
 	}
+
 	IEnumerator shakeMe(int player){
 		float t = 1f; 
 		while (t > 0f) {
