@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Image Sequence Playback\Scripts\Editor\PlaybackEditor.cs" />
+     <None Include="Assets\Materials\Materials\Materials\champagne_limousines\Font-license-readme.txt" />
      <None Include="Assets\Image Sequence Playback\changelog.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
