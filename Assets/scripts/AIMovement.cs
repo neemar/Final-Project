@@ -3,10 +3,17 @@ using System.Collections;
 
 public class AIMovement : MonoBehaviour {
 
-	bool shouldIMove = true;
+	bool shouldIMove;
 	// Use this for initialization
 	void Start () {
-	
+		//randomly decide if ai start out moving or not
+		int decideIfIMove = Random.Range (0, 2);
+		if (decideIfIMove == 0) {
+			shouldIMove = true;
+		}
+		else {
+			shouldIMove = false;
+		}
 	}
 	
 	// Update is called once per frame
@@ -15,51 +22,34 @@ public class AIMovement : MonoBehaviour {
 	}
 
 	IEnumerator moveAI () {
-		//generate a number from 1-3 and move forward for that many seconds
-		int moveSecs = Random.Range (1, 4);
 		Ray aiRay = new Ray (transform.position, transform.forward);
 		RaycastHit hit = new RaycastHit();
+
+		//if ai should move
 		if (shouldIMove == true) {
+			//generate a number from 1-3 and move forward for that many seconds
+			int moveSecs = Random.Range (1, 4);
 			while (moveSecs > 0) {
 				transform.Translate (new Vector3 (0f, 0f, 10f * Time.deltaTime));
-				//if raycast hits something, stop for a few seconds
-				if (Physics.Raycast (aiRay, out hit, 20f)) {
+				//if raycast hits something, stop 
+				if (Physics.Raycast (aiRay, out hit, 50f)) {
 					Debug.DrawRay ( aiRay.origin, aiRay.direction * hit.distance, Color.black);
 					//transform.Translate (new Vector3 (0f, 0f, 0f));
 					shouldIMove = false;
-					yield return new WaitForSeconds (3f);
-
-					int turnSide = Random.Range (0, 2);
-					int turnTime = Random.Range (1, 3);
-					while (turnTime > 0) {
-						if (turnSide == 0) {
-							transform.eulerAngles += new Vector3 (0f, 30f, 0f);
-							turnTime--;
-						}
-						else {
-							transform.eulerAngles += new Vector3 (0f, -30f, 0f);
-							turnTime--;
-						}
-					}
 				}
 				moveSecs--;
 			}
-			//ai turns either right or left depending on value for random number of seconds
-			int turnSide2 = Random.Range (0, 2);
-			int turnTime2 = Random.Range (1, 3);
-			while (turnTime2 > 0) {
-				if (turnSide2 == 0) {
-					transform.eulerAngles += new Vector3 (0f, 10f, 0f);
-					turnTime2--;
-				}
-				else {
-					transform.eulerAngles += new Vector3 (0f, -10f, 0f);
-					turnTime2--;
-				}
+		}
+		//if not, turn
+		else {
+			//generate a number from 1-3 and turn for that many seconds
+			int turnSecs = Random.Range (1, 4);
+			while (turnSecs > 0) {
+				transform.eulerAngles += new Vector3 (0f, -10f, 0f);
+				turnSecs--;
 			}
-			yield return new WaitForSeconds (4f);
 			shouldIMove = true;
 		}
+		yield return new WaitForSeconds (3f);
 	}
-
 }
