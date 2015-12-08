@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI; 
 
 public class GUY1 : MonoBehaviour {
-<<<<<<< HEAD
+
 	public Transform leftperson;
 	public Transform rightperson;
 	public Text leftpersontext;
@@ -12,12 +12,7 @@ public class GUY1 : MonoBehaviour {
 	string myString2 = ("The dead skyscrapers represent my heart");
 	
 	string stringAnimate = ""; 
-=======
-//	public Transform leftperson;
-//	public Transform rightperson;
-//	public Text leftpersontext;
-//	public Text rightpersontext;
->>>>>>> origin/master
+
 
 	
 	IEnumerator AnimateText(){
@@ -48,8 +43,7 @@ public class GUY1 : MonoBehaviour {
 			stringAnimate = "";
 		}}
 	
-	
-	// Update is called once per frame
+
 	void Update () {
 
 
