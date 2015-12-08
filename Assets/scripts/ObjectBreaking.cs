@@ -3,8 +3,11 @@ using System.Collections;
 
 public class ObjectBreaking : MonoBehaviour {
 
+
 	bool playerOne = false;
 	bool playerTwo = false;
+	public static bool girlGo = false;
+	public static bool boyGo = false; 
 
 	void OnCollisionEnter (Collision collide) {
 		//keeps track of which player touched the object last
@@ -22,12 +25,18 @@ public class ObjectBreaking : MonoBehaviour {
 		//destroy object and add score based on who touched the object last
 		if (playerOne == true) {
 			ScoreManager.playerOneScore++;
+			playerOne = false; 
+			girlGo = true; 
 		//	Debug.Log (ScoreManager.playerOneScore);
 		}
 		else if (playerTwo == true) {
 			ScoreManager.playerTwoScore++;
+			playerTwo = false; 
+			boyGo = true; 
 		//	Debug.Log (ScoreManager.playerTwoScore);
 		}
 		//Debug.Log ("destroyed");
 	}
+
+
 }
