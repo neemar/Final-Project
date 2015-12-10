@@ -6,13 +6,23 @@ using System.Collections.Generic;
 public class TextInteractions : MonoBehaviour {
 
 	public Text npcTextPrefab;
+
+	public GameObject music1;
+	
+	public GameObject music2;
+
+	Vector3 toilet = new Vector3(315f,413f,-214f);
+	Vector3 outoftoilet = new Vector3(195f,139f,-251f);
 	public static List<string> inventoryOne = new List<string>();
 	public static List<string> inventoryTwo = new List<string>();
-
+	public bool musicUnchanged=true;
 	void Start () {
 		//clear the inventory lists
 		inventoryOne.Clear ();
 		inventoryTwo.Clear ();
+
+		music2.SetActive(false);
+
 	}
 
 	// Update is called once per frame
@@ -71,10 +81,73 @@ public class TextInteractions : MonoBehaviour {
 					}
 				}
 			}
+			else if (hit.transform.gameObject.tag == "toilet") {
+				if (transform.tag == "PlayerOne") {
+					//player one
+					npcTextPrefab.text = "Press G to enter bathroom";
+					
+					//if player one presses J, put that object name into inventory list and delete object
+					if (Input.GetKey (KeyCode.G)) {
+						transform.position= toilet; 
+					}
+				}
+				else {
+					if (transform.tag == "PlayerTwo") {
+					//player two
+					npcTextPrefab.text = "Press K to enter bathroom";
+					if (Input.GetKey (KeyCode.K)) {
+						transform.position= toilet; 
+					}
+				}
 		}
+			}
+			else if (hit.transform.gameObject.tag == "toilet2") {
+				if (transform.tag == "PlayerOne") {
+					//player one
+					npcTextPrefab.text = "Press G to exit bathroom";
+					
+					//if player one presses J, put that object name into inventory list and delete object
+					if (Input.GetKey (KeyCode.G)) {
+						transform.position= outoftoilet; 
+					}
+				}
+				else {
+					if (transform.tag == "PlayerTwo") {
+						//player two
+						npcTextPrefab.text = "Press K to exit bathroom";
+						if (Input.GetKey (KeyCode.K)) {
+							transform.position= outoftoilet; 
+						}
+					}
+				}
+			}
+			else if (hit.transform.gameObject.tag == "turntab" && musicUnchanged) {
+				if (transform.tag == "PlayerOne") {
+					//player one
+					npcTextPrefab.text = "Press G to change music";
+					
+					//if player one presses J, put that object name into inventory list and delete object
+					if (Input.GetKey (KeyCode.G)) {
+						music1.SetActive(false);
+						music2.SetActive(true);
+						musicUnchanged=false;
+					}
+				}
+				else {
+					if (transform.tag == "PlayerTwo") {
+						//player two
+						npcTextPrefab.text = "Press K to change music";
+						if (Input.GetKey (KeyCode.K)) {
+							music1.SetActive(false);
+							music2.SetActive(true);
+							musicUnchanged=false;
+						}
+					}
+				}
+			}
 		//if not in range of anything/anyone, set text to nothing
 		else {
 			npcTextPrefab.text = "";
 		}
 	}
-}
+	}}

@@ -15,15 +15,15 @@ public class screenShake : MonoBehaviour {
 			girlCamera.transform.position = new Vector3(girl.position.x, girl.position.y + 20f, girl.position.z); 
 
 			ObjectBreaking.girlGo = false; 
-		} else if (ObjectBreaking.boyGo) {
+		} 
+		else if (ObjectBreaking.boyGo) {
 			int player = 1;
 			StartCoroutine (shakeMe (player)); 
 			Camera.main.transform.position = new Vector3(boy.position.x, boy.position.y + 20f, boy.position.z); 
 			ObjectBreaking.boyGo = false; 
 		}
-
-
 	}
+
 	IEnumerator shakeMe(int player){
 		float t = 1f; 
 		//cameraStartBoy = Camera.main.transform.position; 

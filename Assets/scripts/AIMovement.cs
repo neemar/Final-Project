@@ -33,9 +33,10 @@ public class AIMovement : MonoBehaviour {
 				transform.Translate (new Vector3 (0f, 0f, 10f * Time.deltaTime));
 				//if raycast hits something, stop 
 				if (Physics.Raycast (aiRay, out hit, 50f)) {
-					Debug.DrawRay ( aiRay.origin, aiRay.direction * hit.distance, Color.black);
+					Debug.DrawRay (aiRay.origin, aiRay.direction * hit.distance, Color.red);
 					//transform.Translate (new Vector3 (0f, 0f, 0f));
 					shouldIMove = false;
+					yield return new WaitForSeconds (3f);
 				}
 				moveSecs--;
 			}
@@ -51,5 +52,6 @@ public class AIMovement : MonoBehaviour {
 			shouldIMove = true;
 		}
 		yield return new WaitForSeconds (3f);
+		//Debug.Log (Time.deltaTime);
 	}
 }
