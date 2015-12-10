@@ -12,7 +12,7 @@ public class screenShake : MonoBehaviour {
 		if (ObjectBreaking.girlGo) {
 			int player = 0; 
 			StartCoroutine (shakeMe(player));
-			girlCamera.transform.position = new Vector3(girl.position.x, girl.position.y + 20f, girl.position.z); 
+			girlCamera.transform.position = new Vector3(girl.position.x, girl.position.y+50f, girl.position.z); 
 
 			ObjectBreaking.girlGo = false; 
 		} 
@@ -42,7 +42,7 @@ public class screenShake : MonoBehaviour {
 			} else if (player == 0) {
 				Vector3 shakeVector = girlCamera.transform.right * Mathf.Sin (Time.time * 50f); 
 				Vector3 shakeUp = girlCamera.transform.right * Mathf.Sin (Time.time * 47f); 
-				Vector3 returnPosition = new Vector3(girl.position.x, girl.position.y+20, girl.position.z); 
+				Vector3 returnPosition = new Vector3(girl.position.x, girl.position.y+50f, girl.position.z); 
 				girlCamera.transform.position = returnPosition + shakeVector + shakeUp * t * 10f; 
 
 			}
