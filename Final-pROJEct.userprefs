@@ -1,13 +1,20 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GetPointSound.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\wasdMovement.cs">
     <Files>
-      <File FileName="Assets/scripts/GetPointSound.cs" Line="19" Column="1" />
-      <File FileName="Assets/scripts/ObjectBreaking.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Character sPEECH\GUY1.cs" Line="218" Column="35" />
+      <File FileName="Assets\scripts\TextInteractions.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Character sPEECH\scrollText.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\ScoreManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\arrowKeysMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\arrowelev.cs" Line="22" Column="46" />
+      <File FileName="Assets\scripts\wasdMovement.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="D:\gamedev2015\Final-pROJEct\Assets\scripts\Character sPEECH\GUY1.cs" line="39" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
