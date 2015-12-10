@@ -1,13 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\wasdMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\InstructionTransition.cs">
     <Files>
-      <File FileName="Assets\scripts\wasdMovement.cs" Line="19" Column="4" />
-      <File FileName="Assets\scripts\Character sPEECH\GUY1.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\screenShake.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\ObjectBreaking.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\TextInteractions.cs" Line="42" Column="6" />
+      <File FileName="Assets\scripts\screenShake.cs" Line="45" Column="76" />
       <File FileName="Assets\scripts\ObjectInteractions.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\destroy.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\PickUp.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\endGame.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\endText.cs" Line="15" Column="46" />
+      <File FileName="Assets\scripts\InstructionTransition.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
