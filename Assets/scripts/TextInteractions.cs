@@ -11,8 +11,8 @@ public class TextInteractions : MonoBehaviour {
 	
 	public GameObject music2;
 
-	Vector3 toilet = new Vector3(315f,413f,-214f);
-	Vector3 outoftoilet = new Vector3(195f,139f,-251f);
+	Vector3 toilet = new Vector3(315f,375f,-214f);
+	Vector3 outoftoilet = new Vector3(195f,125f,-251f);
 	public static List<string> inventoryOne = new List<string>();
 	public static List<string> inventoryTwo = new List<string>();
 	public bool musicUnchanged=true;
@@ -36,7 +36,7 @@ public class TextInteractions : MonoBehaviour {
 			if (hit.transform.gameObject.tag == "TV") {
 				//if playerone has scissors and presses K
 				if (transform.tag == "PlayerOne" && inventoryOne.Contains("Scissors")) {
-					npcTextPrefab.text = "Press E to cut TV wires.";
+					npcTextPrefab.text = "Press G to cut TV wires.";
 					//gain 10 points and destroy tv
 					if (Input.GetKeyDown (KeyCode.G)) {
 						inventoryOne.Remove ("Scissors");
@@ -99,7 +99,7 @@ public class TextInteractions : MonoBehaviour {
 						transform.position= toilet; 
 					}
 				}
-		}
+				}
 			}
 			else if (hit.transform.gameObject.tag == "toilet2") {
 				if (transform.tag == "PlayerOne") {
@@ -150,4 +150,5 @@ public class TextInteractions : MonoBehaviour {
 			npcTextPrefab.text = "";
 		}
 	}
-	}}
+	}
+}
