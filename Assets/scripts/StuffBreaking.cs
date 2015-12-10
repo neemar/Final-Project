@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 public class StuffBreaking : MonoBehaviour {
 
+
+	//SCRIPT UNUSED
+
 	int score;
 	public Text myText;
 	float timeSpent;
