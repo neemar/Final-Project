@@ -33,6 +33,15 @@ public class ObjectInteractions : MonoBehaviour {
 					}
 				}
 			}
+			if ( hit.transform.gameObject.tag == "toilet" ) {
+				if (girlItems.ContainsKey("Cake")) {
+					if ( Input.GetKeyDown (KeyCode.E) ) {
+						Destroy (hit.transform.gameObject);
+						Destroy (transform.Find ("Cake").gameObject);
+						girlItems.Remove ("Cake");
+					}
+				}
+			}
 		}
 	}
 }
