@@ -1,12 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-public class ObjectBreaking : MonoBehaviour {
+public class OBJECTbreakingelev : MonoBehaviour {
+	
+
+	
 	bool playerOne = false;
 	bool playerTwo = false;
-	public static bool girlGo = false;
-	public static bool boyGo = false; 
 	
+	void Start(){
+		
+
+	}
 	void OnCollisionEnter (Collision collide) {
 		//keeps track of which player touched the object last
 		if (collide.gameObject.tag == "PlayerOne") {
@@ -24,13 +29,16 @@ public class ObjectBreaking : MonoBehaviour {
 		if (playerOne == true) {
 			ScoreManager.playerOneScore++;
 			playerOne = false; 
-			girlGo = true; 
+			
+			guy2.instance.glassed= true;
+
 			//	Debug.Log (ScoreManager.playerOneScore);
 		}
 		else if (playerTwo == true) {
 			ScoreManager.playerTwoScore++;
 			playerTwo = false; 
-			boyGo = true; 
+			
+			guy3.instance.glassed= true;
 			//	Debug.Log (ScoreManager.playerTwoScore);
 		}
 		//Debug.Log ("destroyed");
@@ -38,4 +46,3 @@ public class ObjectBreaking : MonoBehaviour {
 	
 	
 }
-
