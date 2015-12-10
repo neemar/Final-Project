@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/shakeTest.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Character sPEECH/GUY1.cs">
     <Files>
       <File FileName="Assets/scripts/screenShake.cs" Line="9" Column="52" />
-      <File FileName="Assets/scripts/shakeTest.cs" Line="28" Column="1" />
+      <File FileName="Assets/scripts/Character sPEECH/GUY1.cs" Line="32" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
