@@ -1,13 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\wasdMovement.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\endGame.cs">
     <Files>
-      <File FileName="Assets\scripts\wasdMovement.cs" Line="19" Column="4" />
-      <File FileName="Assets\scripts\Character sPEECH\GUY1.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\screenShake.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\ObjectBreaking.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\ObjectInteractions.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\destroy.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\ObjectInteractions.cs" Line="37" Column="3" />
+      <File FileName="Assets\scripts\endGame.cs" Line="18" Column="1" />
+      <File FileName="..\Horror\Assets\scripts\controls.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\endText.cs" Line="21" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
