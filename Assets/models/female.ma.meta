@@ -7,12 +7,45 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: pasted__pCylinder8
+    100004: group1
+    100006: pasted__polySurface11
+    100008: polySurface1
+    100010: joint1
+    100012: joint10
+    100014: joint11
+    100016: joint2
+    100018: joint3
+    100020: joint4
+    100022: joint5
+    100024: joint6
+    100026: joint7
+    100028: joint8
+    100030: joint9
     400000: //RootNode
     400002: pasted__pCylinder8
+    400004: group1
+    400006: pasted__polySurface11
+    400008: polySurface1
+    400010: joint1
+    400012: joint10
+    400014: joint11
+    400016: joint2
+    400018: joint3
+    400020: joint4
+    400022: joint5
+    400024: joint6
+    400026: joint7
+    400028: joint8
+    400030: joint9
     2300000: pasted__pCylinder8
+    2300002: polySurface1
     3300000: pasted__pCylinder8
+    3300002: polySurface1
     4300000: pasted__pCylinder8
+    4300002: polySurface1
+    7400000: Take 001
     9500000: //RootNode
+    13700000: polySurface1
   materials:
     importMaterials: 1
     materialName: 0
