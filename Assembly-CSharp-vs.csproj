@@ -76,6 +76,8 @@
      <Compile Include="Assets\scripts\arrowKeysMovement.cs" />
      <Compile Include="Assets\scripts\arrowelev.cs" />
      <Compile Include="Assets\scripts\destroy.cs" />
+     <Compile Include="Assets\scripts\endGame.cs" />
+     <Compile Include="Assets\scripts\endText.cs" />
      <Compile Include="Assets\scripts\jump.cs" />
      <Compile Include="Assets\scripts\raycas.cs" />
      <Compile Include="Assets\scripts\rigibidoe.cs" />
