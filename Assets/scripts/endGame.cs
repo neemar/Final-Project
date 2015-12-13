@@ -11,7 +11,7 @@ public class endGame : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (ScoreManager.playerOneScore >= 3 || ScoreManager.playerTwoScore >= 3){
+		if (ScoreManager.playerOneScore >= 3 || ScoreManager.playerTwoScore >= 5){
 			//load new level immediately or have some kind of transition?
 			Application.LoadLevel ("endGame"); 
 		}
