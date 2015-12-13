@@ -6,6 +6,7 @@ public class screenShake : MonoBehaviour {
 	public Transform girl; 
 	public Transform boy; 
 	public Transform marker; 
+	public Transform boyMarker; 
 	void Start(){
 		 
 	}
@@ -20,7 +21,7 @@ public class screenShake : MonoBehaviour {
 		else if (ObjectBreaking.boyGo) {
 			int player = 1;
 			StartCoroutine (shakeMe (player)); 
-			Camera.main.transform.position = new Vector3(boy.position.x, boy.position.y + 20f, boy.position.z); 
+			Camera.main.transform.position = boyMarker.position; 
 			ObjectBreaking.boyGo = false; 
 		}
 	}
@@ -38,7 +39,7 @@ public class screenShake : MonoBehaviour {
 				Vector3 shakeVector = Camera.main.transform.right * Mathf.Sin (Time.time * 50f); 
 				//make the up one a different frequency, otherwise it will look diagonal and coordinated
 				Vector3 shakeUpVector = Camera.main.transform.up * Mathf.Sin (Time.time * 47f); 
-				Vector3 returnPosition = new Vector3(boy.position.x, boy.position.y + 20f, boy.position.z);
+				Vector3 returnPosition = boyMarker.position;
 				Camera.main.transform.position = returnPosition + shakeVector + shakeUpVector * t * 10f; 
 			} else if (player == 0) {
 				Vector3 shakeVector = girlCamera.transform.right * Mathf.Sin (Time.time * 50f); 
