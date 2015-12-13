@@ -1,6 +1,6 @@
 //Maya ASCII 2016 scene
 //Name: female.ma
-//Last modified: Thu, Dec 10, 2015 03:41:48 PM
+//Last modified: Thu, Dec 10, 2015 04:38:57 PM
 //Codeset: 1252
 requires maya "2016";
 requires "stereoCamera" "10.0";
@@ -15,13 +15,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "8AAF460D-6A41-009D-D37F-28859AB183D9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 7.9422247594594815 5.7805960969866339 21.561824758290811 ;
+	setAttr ".t" -type "double3" 3.040313479121985 3.4677892755996069 9.3061722411457684 ;
 	setAttr ".r" -type "double3" -9.9383527320513423 2541.799999999449 8.5638213028404863e-016 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5AF430A6-AB4D-7FC8-DA7C-17BB443F045D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 23.188268298662503;
+	setAttr ".coi" 9.7875657717664524;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
