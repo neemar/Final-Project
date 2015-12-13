@@ -16,7 +16,7 @@ public class ObjectInteractions : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Ray playerRay = new Ray (transform.position, transform.forward);
+		Ray playerRay = new Ray (transform.position + new Vector3(0f, 30, 0f), transform.forward);
 		RaycastHit hit = new RaycastHit();
 		if (Physics.Raycast (playerRay, out hit, 100f)) {
 			//npcTextPrefab.text = "LOL";
@@ -25,7 +25,7 @@ public class ObjectInteractions : MonoBehaviour {
 			if (hit.transform.gameObject.tag == "TV") {
 				//if player has object required to interact with TV then...
 				if (girlItems.ContainsKey ("Scissors")) {
-					if (Input.GetKeyDown (KeyCode.E)) {
+					if (Input.GetKeyDown (KeyCode.G)) {
 						Destroy (hit.transform.gameObject); 
 						Destroy (transform.Find ("Scissors").gameObject);
 						girlItems.Remove ("Scissors");
