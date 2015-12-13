@@ -1,13 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\guy3.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\guy2.cs">
     <Files>
       <File FileName="Assets\scripts\OBJECTbreakingelev.cs" Line="39" Column="23" />
-      <File FileName="Assets\guy2.cs" Line="7" Column="30" />
+      <File FileName="Assets\guy2.cs" Line="38" Column="18" />
       <File FileName="Assets\scripts\ObjectBreaking.cs" Line="9" Column="2" />
       <File FileName="Assets\scripts\Character sPEECH\GUY1.cs" Line="39" Column="60" />
-      <File FileName="Assets\scripts\TextInteractions.cs" Line="11" Column="2" />
-      <File FileName="Assets\guy3.cs" Line="13" Column="43" />
+      <File FileName="Assets\scripts\TextInteractions.cs" Line="154" Column="2" />
+      <File FileName="Assets\guy3.cs" Line="109" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
