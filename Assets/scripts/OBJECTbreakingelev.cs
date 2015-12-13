@@ -30,15 +30,13 @@ public class OBJECTbreakingelev : MonoBehaviour {
 			ScoreManager.playerOneScore++;
 			playerOne = false; 
 			
-			guy2.instance.glassed= true;
 
 			//	Debug.Log (ScoreManager.playerOneScore);
 		}
 		else if (playerTwo == true) {
 			ScoreManager.playerTwoScore++;
 			playerTwo = false; 
-			
-			guy3.instance.glassed= true;
+
 			//	Debug.Log (ScoreManager.playerTwoScore);
 		}
 		//Debug.Log ("destroyed");

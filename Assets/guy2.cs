@@ -13,7 +13,7 @@ public class guy2 : MonoBehaviour {
 	
 	string myString8 = ("Give it to me....");
 	
-	string myString7 = ("Have fun!");
+	string myString7 = ("Now try picking up that pair of scissors!;");
 	string myString6 = ("Breakable stuff glows pink! Knock them over to get points.");
 	string myString5 = ("Use WASD to move. Try knocking over that glass!");
 	string stringAnimate = "";

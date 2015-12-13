@@ -10,7 +10,7 @@ public class PickUp : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		
 	}
 	
 	// Update is called once per frame
@@ -23,7 +23,7 @@ public class PickUp : MonoBehaviour {
 			//if the item the raycast is hitting is able to be picked up
 			if (hit.transform.gameObject.tag == "Pickupable") {
 				//if player1 presses k, pick up item
-				if (transform.tag == "PlayerOne" && Input.GetKeyDown (KeyCode.E)) {
+				if (transform.tag == "PlayerOne" && Input.GetKeyDown (KeyCode.G)) {
 					ObjectInteractions.girlItems.Add ("Scissors", hit.transform);
 					hit.transform.parent = transform;
 					hit.collider.enabled = false;
