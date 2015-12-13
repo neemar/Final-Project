@@ -17,6 +17,33 @@ ModelImporter:
     100018: pCube8
     100020: pCube9
     100022: pCylinder1
+    100024: polySurface1
+    100026: polySurface10
+    100028: polySurface11
+    100030: polySurface12
+    100032: polySurface13
+    100034: polySurface14
+    100036: polySurface15
+    100038: polySurface16
+    100040: polySurface17
+    100042: polySurface18
+    100044: polySurface19
+    100046: polySurface2
+    100048: polySurface20
+    100050: polySurface21
+    100052: polySurface22
+    100054: polySurface23
+    100056: polySurface24
+    100058: polySurface25
+    100060: polySurface26
+    100062: polySurface3
+    100064: polySurface4
+    100066: polySurface5
+    100068: polySurface6
+    100070: polySurface7
+    100072: polySurface8
+    100074: polySurface9
+    100076: transform1
     400000: //RootNode
     400002: pCube1
     400004: pCube10
@@ -29,6 +56,33 @@ ModelImporter:
     400018: pCube8
     400020: pCube9
     400022: pCylinder1
+    400024: polySurface1
+    400026: polySurface10
+    400028: polySurface11
+    400030: polySurface12
+    400032: polySurface13
+    400034: polySurface14
+    400036: polySurface15
+    400038: polySurface16
+    400040: polySurface17
+    400042: polySurface18
+    400044: polySurface19
+    400046: polySurface2
+    400048: polySurface20
+    400050: polySurface21
+    400052: polySurface22
+    400054: polySurface23
+    400056: polySurface24
+    400058: polySurface25
+    400060: polySurface26
+    400062: polySurface3
+    400064: polySurface4
+    400066: polySurface5
+    400068: polySurface6
+    400070: polySurface7
+    400072: polySurface8
+    400074: polySurface9
+    400076: transform1
     2300000: pCube1
     2300002: pCube10
     2300004: pCube11
@@ -40,6 +94,32 @@ ModelImporter:
     2300016: pCube8
     2300018: pCube9
     2300020: pCylinder1
+    2300022: polySurface1
+    2300024: polySurface10
+    2300026: polySurface11
+    2300028: polySurface12
+    2300030: polySurface13
+    2300032: polySurface14
+    2300034: polySurface15
+    2300036: polySurface16
+    2300038: polySurface17
+    2300040: polySurface18
+    2300042: polySurface19
+    2300044: polySurface2
+    2300046: polySurface20
+    2300048: polySurface21
+    2300050: polySurface22
+    2300052: polySurface23
+    2300054: polySurface24
+    2300056: polySurface25
+    2300058: polySurface26
+    2300060: polySurface3
+    2300062: polySurface4
+    2300064: polySurface5
+    2300066: polySurface6
+    2300068: polySurface7
+    2300070: polySurface8
+    2300072: polySurface9
     3300000: pCube1
     3300002: pCube10
     3300004: pCube11
@@ -51,6 +131,32 @@ ModelImporter:
     3300016: pCube8
     3300018: pCube9
     3300020: pCylinder1
+    3300022: polySurface1
+    3300024: polySurface10
+    3300026: polySurface11
+    3300028: polySurface12
+    3300030: polySurface13
+    3300032: polySurface14
+    3300034: polySurface15
+    3300036: polySurface16
+    3300038: polySurface17
+    3300040: polySurface18
+    3300042: polySurface19
+    3300044: polySurface2
+    3300046: polySurface20
+    3300048: polySurface21
+    3300050: polySurface22
+    3300052: polySurface23
+    3300054: polySurface24
+    3300056: polySurface25
+    3300058: polySurface26
+    3300060: polySurface3
+    3300062: polySurface4
+    3300064: polySurface5
+    3300066: polySurface6
+    3300068: polySurface7
+    3300070: polySurface8
+    3300072: polySurface9
     4300000: pCylinder1
     4300002: pCube1
     4300004: pCube2
@@ -62,6 +168,34 @@ ModelImporter:
     4300016: pCube9
     4300018: pCube10
     4300020: pCube11
+    4300022: polySurface1
+    4300024: polySurface2
+    4300026: polySurface3
+    4300028: polySurface4
+    4300030: polySurface5
+    4300032: polySurface6
+    4300034: polySurface7
+    4300036: polySurface8
+    4300038: polySurface9
+    4300040: polySurface10
+    4300042: polySurface11
+    4300044: polySurface12
+    4300046: polySurface13
+    4300048: polySurface14
+    4300050: polySurface15
+    4300052: polySurface16
+    4300054: polySurface17
+    4300056: polySurface18
+    4300058: polySurface19
+    4300060: polySurface20
+    4300062: polySurface21
+    4300064: polySurface22
+    4300066: polySurface23
+    4300068: polySurface24
+    4300070: polySurface25
+    4300072: polySurface26
+    7400000: Idle
+    7400002: Breaking
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -82,7 +216,171 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: polySurface1
+        weight: 1
+      - path: polySurface2
+        weight: 1
+      - path: polySurface3
+        weight: 1
+      - path: polySurface4
+        weight: 1
+      - path: polySurface5
+        weight: 1
+      - path: polySurface6
+        weight: 1
+      - path: polySurface7
+        weight: 1
+      - path: polySurface8
+        weight: 1
+      - path: polySurface9
+        weight: 1
+      - path: polySurface10
+        weight: 1
+      - path: polySurface11
+        weight: 1
+      - path: polySurface12
+        weight: 1
+      - path: polySurface13
+        weight: 1
+      - path: polySurface14
+        weight: 1
+      - path: polySurface15
+        weight: 1
+      - path: polySurface16
+        weight: 1
+      - path: polySurface17
+        weight: 1
+      - path: polySurface18
+        weight: 1
+      - path: polySurface19
+        weight: 1
+      - path: polySurface20
+        weight: 1
+      - path: polySurface21
+        weight: 1
+      - path: polySurface22
+        weight: 1
+      - path: polySurface23
+        weight: 1
+      - path: polySurface24
+        weight: 1
+      - path: polySurface25
+        weight: 1
+      - path: polySurface26
+        weight: 1
+      - path: transform1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Breaking
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: polySurface1
+        weight: 1
+      - path: polySurface2
+        weight: 1
+      - path: polySurface3
+        weight: 1
+      - path: polySurface4
+        weight: 1
+      - path: polySurface5
+        weight: 1
+      - path: polySurface6
+        weight: 1
+      - path: polySurface7
+        weight: 1
+      - path: polySurface8
+        weight: 1
+      - path: polySurface9
+        weight: 1
+      - path: polySurface10
+        weight: 1
+      - path: polySurface11
+        weight: 1
+      - path: polySurface12
+        weight: 1
+      - path: polySurface13
+        weight: 1
+      - path: polySurface14
+        weight: 1
+      - path: polySurface15
+        weight: 1
+      - path: polySurface16
+        weight: 1
+      - path: polySurface17
+        weight: 1
+      - path: polySurface18
+        weight: 1
+      - path: polySurface19
+        weight: 1
+      - path: polySurface20
+        weight: 1
+      - path: polySurface21
+        weight: 1
+      - path: polySurface22
+        weight: 1
+      - path: polySurface23
+        weight: 1
+      - path: polySurface24
+        weight: 1
+      - path: polySurface25
+        weight: 1
+      - path: polySurface26
+        weight: 1
+      - path: transform1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
