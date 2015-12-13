@@ -62,7 +62,6 @@
      <Compile Include="Assets\scripts\InventoryGUI.cs" />
      <Compile Include="Assets\scripts\LEFTobjInt.cs" />
      <Compile Include="Assets\scripts\Menutransition.cs" />
-     <Compile Include="Assets\scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\scripts\ObjectBreaking.cs" />
      <Compile Include="Assets\scripts\ObjectInteractions.cs" />
      <Compile Include="Assets\scripts\PickUp.cs" />
@@ -74,13 +73,18 @@
      <Compile Include="Assets\scripts\StuffBreaking.cs" />
      <Compile Include="Assets\scripts\TextInteractions.cs" />
      <Compile Include="Assets\scripts\arrowKeysMovement.cs" />
+     <Compile Include="Assets\scripts\arrowelev.cs" />
      <Compile Include="Assets\scripts\destroy.cs" />
+     <Compile Include="Assets\scripts\endGame.cs" />
+     <Compile Include="Assets\scripts\endText.cs" />
      <Compile Include="Assets\scripts\jump.cs" />
      <Compile Include="Assets\scripts\raycas.cs" />
      <Compile Include="Assets\scripts\rigibidoe.cs" />
      <Compile Include="Assets\scripts\scissors.cs" />
      <Compile Include="Assets\scripts\screenShake.cs" />
      <Compile Include="Assets\scripts\wasdMovement.cs" />
+     <Compile Include="Assets\scripts\wasdelev.cs" />
+     <Compile Include="Assets\toiletenter.cs" />
      <None Include="Assets\Materials\Materials\Materials\champagne_limousines\Font-license-readme.txt" />
      <None Include="Assets\Image Sequence Playback\changelog.txt" />
  <Reference Include="UnityEngine.Analytics">
