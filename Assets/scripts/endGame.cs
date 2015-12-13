@@ -14,12 +14,6 @@ public class endGame : MonoBehaviour {
 		if (ScoreManager.playerOneScore >= 3 || ScoreManager.playerTwoScore >= 3){
 			//load new level immediately or have some kind of transition?
 			Application.LoadLevel ("endGame"); 
-
-
-
-		
-
 		}
-	
 	}
 }

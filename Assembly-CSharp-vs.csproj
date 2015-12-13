@@ -62,7 +62,6 @@
      <Compile Include="Assets\scripts\InventoryGUI.cs" />
      <Compile Include="Assets\scripts\LEFTobjInt.cs" />
      <Compile Include="Assets\scripts\Menutransition.cs" />
-     <Compile Include="Assets\scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\scripts\ObjectBreaking.cs" />
      <Compile Include="Assets\scripts\ObjectInteractions.cs" />
      <Compile Include="Assets\scripts\PickUp.cs" />
