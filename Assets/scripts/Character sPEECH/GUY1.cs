@@ -35,10 +35,10 @@ public class GUY1 : MonoBehaviour {
 		string myString7 = ("John?");
 	string myString6 = ("The angle to the Chrysler Building is 3 degrees less stimulating than the view from John's place");
 		string myString5 = ("What a splendid view!");
-	string myString4 = ("Yeahhhh, I don’t subscribe to sweaters anymore.");
-	string myString3 = ("Hey did you see Kanye’s sweater in his last fashion show? it was ridiculous.");
-	string myString = ("I will never love again !");
-	string myString2 = ("The skyline represents my heart");
+	string myString4 = ("All kids these days do is push objects over. Theres just no hatefulness in that!");
+	string myString3 = ("I've wrecked my fair share of parties");
+	string myString = ("I will never love again!");
+	string myString2 = ("By the way, you can flush that cake down the toilet for a lot of points!");
 	
 	string stringAnimate = ""; 
 
