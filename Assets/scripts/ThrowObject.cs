@@ -13,13 +13,18 @@ public class ThrowObject : MonoBehaviour {
 		if (Physics.Raycast (playerRay, out hit, 30f)) {
 			Debug.DrawRay ( playerRay.origin, playerRay.direction * hit.distance, Color.red);
 			if (hit.transform.gameObject.tag == "Throwable") {
-				//Debug.Log ("LOL");
 				//if player one presses G
 				if (transform.tag == "PlayerOne") {
-					while (Input.GetKeyDown (KeyCode.G)) {
+					if (holdingObject == false && Input.GetKeyDown (KeyCode.K)) {
+						holdingObject = true;
 						hit.transform.parent = transform;
 					}
-					hit.transform.GetComponent<Rigidbody>().AddForce (hit.transform.forward * 100);
+					else if (holdingObject == true && Input.GetKeyDown (KeyCode.K)) {
+						holdingObject = false;
+						hit.transform.parent = null;
+						hit.transform.GetComponent<Rigidbody>().constraints &= ~RigidbodyConstraints.FreezePosition;
+					}
+					hit.transform.GetComponent<Rigidbody>().AddForce (hit.transform.forward * 2000);
 				}
 				//if player two presses K
 				else {//(transform.tag == "PlayerTwo") {
@@ -27,11 +32,12 @@ public class ThrowObject : MonoBehaviour {
 						holdingObject = true;
 						hit.transform.parent = transform;
 					}
-//					if (holdingObject == true && Input.GetKeyDown (KeyCode.K)) {
-//						holdingObject = false;
-//						hit.transform.parent = null;
-//						hit.transform.GetComponent<Rigidbody>().AddForce (hit.transform.forward * 100);
-//					}
+					else if (holdingObject == true && Input.GetKeyDown (KeyCode.K)) {
+						holdingObject = false;
+						hit.transform.parent = null;
+						hit.transform.GetComponent<Rigidbody>().constraints &= ~RigidbodyConstraints.FreezePosition;
+					}
+					hit.transform.GetComponent<Rigidbody>().AddForce (hit.transform.forward * 2000);
 				}
 			}
 		}
