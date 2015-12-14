@@ -27,11 +27,11 @@ public class ThrowObject : MonoBehaviour {
 						holdingObject = true;
 						hit.transform.parent = transform;
 					}
-//					if (holdingObject == true && Input.GetKeyDown (KeyCode.K)) {
-//						holdingObject = false;
-//						hit.transform.parent = null;
-//						hit.transform.GetComponent<Rigidbody>().AddForce (hit.transform.forward * 100);
-//					}
+					else if (holdingObject == true && Input.GetKeyDown (KeyCode.K)) {
+						holdingObject = false;
+						hit.transform.parent = null;
+						hit.transform.GetComponent<Rigidbody>().AddForce (hit.transform.forward * 100);
+					}
 				}
 			}
 		}
