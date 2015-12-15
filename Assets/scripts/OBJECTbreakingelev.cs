@@ -17,10 +17,16 @@ public class OBJECTbreakingelev : MonoBehaviour {
 		if (collide.gameObject.tag == "PlayerOne") {
 			playerOne = true;
 			playerTwo = false;
+			
+			guy3.instance.glassed= true;
+
 		}
 		else if (collide.gameObject.tag == "PlayerTwo") {
 			playerOne = false;
 			playerTwo = true;
+			
+			guy3.instance.glassed= true;
+
 		}
 	}
 	

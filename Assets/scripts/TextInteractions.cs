@@ -6,21 +6,23 @@ using System.Collections.Generic;
 public class TextInteractions : MonoBehaviour {
 
 	public Text npcTextPrefab;
-
+	public GameObject cake;
 	public GameObject music1;
 	
 	public GameObject music2;
+	Vector3 toilet= new Vector3(275f,391f,-240f);
+	Vector3 outoftoilet= new Vector3(195f,125f,-251f);
 
-	Vector3 toilet = new Vector3(315f,375f,-214f);
-	Vector3 outoftoilet = new Vector3(195f,125f,-251f);
 	public static List<string> inventoryOne = new List<string>();
 	public static List<string> inventoryTwo = new List<string>();
-	public bool musicUnchanged=true;
+	public bool musicUnchanged= true;
+	public bool cakecake= false;
 	void Start () {
+		cakecake= false;
 		//clear the inventory lists
 		inventoryOne.Clear ();
 		inventoryTwo.Clear ();
-
+		cake.SetActive(true);
 		music2.SetActive(false);
 
 	}
@@ -58,9 +60,8 @@ public class TextInteractions : MonoBehaviour {
 					npcTextPrefab.text = "Need a pair of sisscors to cut the wires";
 				}
 			}
-			else if (hit.transform.gameObject.tag == "NPC") {
-				npcTextPrefab.text = "Hello";
-			}
+
+
 			else if (hit.transform.gameObject.tag == "Pickupable") {
 				if (transform.tag == "PlayerOne") {
 					//player one
@@ -145,10 +146,68 @@ public class TextInteractions : MonoBehaviour {
 					}
 				}
 			}
+
+			else if (hit.transform.gameObject.name == "Cake") {
+				if (transform.tag == "PlayerOne") {
+					//player one
+					npcTextPrefab.text = "Press G to steal the cake!";
+					
+					//if player one presses J, put that object name into inventory list and delete object
+					if (Input.GetKey (KeyCode.G)) {
+						npcTextPrefab.text = "You sneakily stuff the cake down your shirt";
+						cake.SetActive(false);
+						cakecake= true;
+						ScoreManager.playerOneScore+= 2;
+					}
+				}
+				else {
+					if (transform.tag == "PlayerTwo") {
+						//player two
+						npcTextPrefab.text = "Press G to steal the cake!";
+						if (Input.GetKey (KeyCode.K)) {
+							npcTextPrefab.text = "You sneakily stuff the cake down your shirt";
+							cake.SetActive(false);
+							cakecake= true;
+							ScoreManager.playerTwoScore+=2;
+						}
+					}
+				}
+			}
+			else if (hit.transform.gameObject.tag == "Wuhu") {
+				if (transform.tag == "PlayerOne" && cakecake){
+					npcTextPrefab.text = "Press G to clog the toilet with the cake!";
+					if (Input.GetKey (KeyCode.G)) {
+						npcTextPrefab.text = "You did it!";
+						ScoreManager.playerOneScore+=7;
+					}}
+
+
+				else if (transform.tag == "PlayerOne"&&!cakecake) {
+					//player one
+					npcTextPrefab.text = "There has to be something important to flush away";
+					
+					
+
+				}
+				else if (transform.tag == "PlayerTwo" && cakecake){
+					npcTextPrefab.text = "Press K to clog the toilet with the cake!";
+					if (Input.GetKey (KeyCode.G)) {
+						npcTextPrefab.text = "You did it!";
+						ScoreManager.playerTwoScore+=7;
+					}}
+						
+						
+						else if (transform.tag == "PlayerTwo"&& !cakecake) {
+							//player one
+							npcTextPrefab.text = "There has to be something important to flush away";
+							
+							
+						}
+					
+			}
 		//if not in range of anything/anyone, set text to nothing
 		else {
 			npcTextPrefab.text = "";
 		}
 	}
-	}
-}
+	}}
