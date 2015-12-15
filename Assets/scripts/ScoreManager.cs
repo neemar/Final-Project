@@ -19,8 +19,9 @@ public class ScoreManager : MonoBehaviour {
 		//displays score
 		playerOneText.text = "" +playerOneScore;
 		playerTwoText.text = "" +playerTwoScore;
-		player1fill.fillAmount= playerOneScore/10f;
-		player2fill.fillAmount= playerTwoScore/10f;
+		player1fill.fillAmount= playerOneScore/7f;
+		player2fill.fillAmount= playerTwoScore/7f;
+
 
 	}
 }

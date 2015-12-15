@@ -13,9 +13,9 @@ public class pmrr : MonoBehaviour {
 		if (Physics.Raycast (playerRay, out hit, 100f)) {
 			//npcTextPrefab.text = "LOL";
 			Debug.DrawRay ( playerRay.origin, playerRay.direction * hit.distance, Color.green);
-			//if the item the raycast is hitting is able to be picked up
+		
 			if (hit.transform.gameObject.tag == "Pickupable") {
-				//if player1 presses k, pick up item
+			
 				if (transform.tag == "PlayerOne" && Input.GetKeyDown (KeyCode.G)) {
 					ObjectInteractions.girlItems.Add ("Scissors", hit.transform);
 					hit.transform.parent = transform;

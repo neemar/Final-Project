@@ -12,6 +12,7 @@ public class ObjectBreaking : MonoBehaviour {
 		if (collide.gameObject.tag == "PlayerOne") {
 			playerOne = true;
 			playerTwo = false;
+
 		}
 		else if (collide.gameObject.tag == "PlayerTwo") {
 			playerOne = false;
@@ -24,13 +25,15 @@ public class ObjectBreaking : MonoBehaviour {
 		if (playerOne == true) {
 			ScoreManager.playerOneScore++;
 			playerOne = false; 
-			girlGo = true; 
+			girlGo = true;
+			GetComponent<AudioSource>().Play ();
 			//	Debug.Log (ScoreManager.playerOneScore);
 		}
 		else if (playerTwo == true) {
 			ScoreManager.playerTwoScore++;
 			playerTwo = false; 
 			boyGo = true; 
+			GetComponent<AudioSource>().Play ();
 			//	Debug.Log (ScoreManager.playerTwoScore);
 		}
 		//Debug.Log ("destroyed");

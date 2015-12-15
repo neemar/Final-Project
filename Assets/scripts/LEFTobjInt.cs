@@ -25,7 +25,7 @@ public class LEFTobjInt : MonoBehaviour {
 			if (hit.transform.gameObject.tag == "TV") {
 				//if player has object required to interact with TV then...
 				if (boyItems.ContainsKey ("Scissors")) {
-					if (Input.GetKeyDown (KeyCode.K)) {
+					if (Input.GetKeyDown (KeyCode.G)) {
 						Destroy (hit.transform.gameObject); 
 						Destroy (transform.Find ("Scissors").gameObject);
 						boyItems.Remove ("Scissors");
