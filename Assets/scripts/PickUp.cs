@@ -4,15 +4,6 @@ using UnityEngine.UI;
 
 public class PickUp : MonoBehaviour {
 
-	//public Transform player;
-
-	//public Text npcTextPrefab;
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
 	// Update is called once per frame
 	void Update () {
 		Ray playerRay = new Ray (transform.position, transform.forward);
@@ -27,16 +18,12 @@ public class PickUp : MonoBehaviour {
 					ObjectInteractions.girlItems.Add ("Scissors", hit.transform);
 					hit.transform.parent = transform;
 					hit.collider.enabled = false;
-				//	LayerMask l = hit.transform.gameObject.layer;
-				//	l = LayerMask.NameToLayer ("Ignore Raycast");
 				}
 				//if player2 presses e, pick up item
 				if (transform.tag == "PlayerTwo" && Input.GetKeyDown (KeyCode.K)) {
 					LEFTobjInt.boyItems.Add ("Scissors", hit.transform);
 					hit.transform.parent = transform;
 					hit.collider.enabled = false;
-				//	LayerMask l = hit.transform.gameObject.layer;
-				//	l = LayerMask.NameToLayer ("Ignore Raycast");
 				}
 			}
 		}

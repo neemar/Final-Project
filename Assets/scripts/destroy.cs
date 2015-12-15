@@ -7,6 +7,8 @@ public class destroy : MonoBehaviour {
 	void OnCollisionEnter (Collision collision) {
 		if (collision.gameObject.tag == "Breakable") {
 			Destroy (collision.gameObject);
+
+
 		}
 	}
 }
