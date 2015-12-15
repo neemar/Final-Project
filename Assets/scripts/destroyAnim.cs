@@ -11,7 +11,7 @@ public class destroyAnim : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter (Collider collision) {
-		Debug.Log ("OnTrigger happended");
+//		Debug.Log ("OnTrigger happended");
 		playAnim = !playAnim;
 		myAnimator.SetBool ("IsFalling", playAnim);
 	}
