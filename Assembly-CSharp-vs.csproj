@@ -72,9 +72,11 @@
      <Compile Include="Assets\scripts\ScoreManager.cs" />
      <Compile Include="Assets\scripts\StuffBreaking.cs" />
      <Compile Include="Assets\scripts\TextInteractions.cs" />
+     <Compile Include="Assets\scripts\ThrowObject.cs" />
      <Compile Include="Assets\scripts\arrowKeysMovement.cs" />
      <Compile Include="Assets\scripts\arrowelev.cs" />
      <Compile Include="Assets\scripts\destroy.cs" />
+     <Compile Include="Assets\scripts\destroyAnim.cs" />
      <Compile Include="Assets\scripts\endGame.cs" />
      <Compile Include="Assets\scripts\endText.cs" />
      <Compile Include="Assets\scripts\jump.cs" />
