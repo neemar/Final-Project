@@ -43,7 +43,16 @@ public class GUY1 : MonoBehaviour {
 	string stringAnimate = ""; 
 
 
+void Start(){
 
+		notplaying= true;
+		 notplaying1= true;
+		notplaying2= true;
+		 notplaying3= true;
+		 notplaying4= true;
+	 notplaying5= true;
+		notplaying6= true;
+	}
 
 	IEnumerator AnimateText5(){
 		for (int i = 0; i < myString5.Length; i++) {
@@ -111,8 +120,8 @@ IEnumerator AnimateText4(){
 
 
 	}	IEnumerator AnimateText44(){
-		for (int i = 0; i < myString3.Length; i++) {
-			stringAnimate += myString3[i]; 
+		for (int i = 0; i < myString4.Length; i++) {
+			stringAnimate += myString4[i]; 
 			yield return new WaitForSeconds(0.05f); 
 		}
 		
@@ -202,25 +211,38 @@ IEnumerator AnimateText4(){
 	void Update () {
 		float ewew1= Vector3.Distance(transform.position,person1.position);
 		float ewew3= Vector3.Distance(transform.position,person3.position);
+		float ewew4= Vector3.Distance(transform.position,person4.position);
 		chartext.text= (stringAnimate);
-		if (ewew1<60f && notplaying1) {
+		if (ewew1<=60f && notplaying1) {
 
 			StartCoroutine( AnimateText111());
 			notplaying1 = false;
-			if (ewew1>60f) {
-				notplaying1=true;
+			 if (ewew1>60f) {
 				StopAllCoroutines();
-				stringAnimate = "";
-			}
-		}
+				notplaying1=true;
 
-		if (ewew3<60f && notplaying1) {
+				stringAnimate = "";
+			}}
+	
+		if (ewew3<60f && notplaying3) {
 			
 			StartCoroutine( AnimateText3333());
-			notplaying1 = false;
+	notplaying3 = false;
 			if (ewew3>60f) {
-				notplaying1=true;
 				StopAllCoroutines();
+				notplaying3=true;
+
+				stringAnimate = "";
+			}
+		}
+		if (ewew4<60f && notplaying4) {
+			
+			StartCoroutine( AnimateText4444444());
+			notplaying4 = false;
+			if (ewew4>60f) {
+				StopAllCoroutines();
+				notplaying4=true;
+				
 				stringAnimate = "";
 			}
 		}
@@ -228,8 +250,8 @@ IEnumerator AnimateText4(){
 
 
 
-	}
+	}}
 	
 	
 	
-}
+
