@@ -14,5 +14,6 @@ public class destroyAnim : MonoBehaviour {
 		Debug.Log ("OnTrigger happended");
 		playAnim = !playAnim;
 		myAnimator.SetBool ("IsFalling", playAnim);
+		GetComponent<AudioSource>().Play ();
 	}
 }
