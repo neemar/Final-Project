@@ -1,11 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\endGame.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\Horror2\Assets\scripts\controls.cs">
     <Files>
-      <File FileName="Assets\scripts\screenShake.cs" Line="39" Column="29" />
-      <File FileName="Assets\scripts\destroyAnim.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\endGame.cs" Line="11" Column="2" />
-      <File FileName="Assets\scripts\AIMovement.cs" Line="1" Column="1" />
+      <File FileName="..\Horror2\Assets\scripts\controls.cs" Line="30" Column="65" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
