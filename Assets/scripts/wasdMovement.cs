@@ -11,7 +11,7 @@ public class wasdMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.W)) {
-			transform.Translate(new Vector3(0f, 0f, 50f * Time.deltaTime)); 
+			transform.Translate(new Vector3(0f, 0f, 45f * Time.deltaTime)); 
 			
 		}
 		if (Input.GetKey (KeyCode.S)) {
@@ -19,11 +19,11 @@ public class wasdMovement : MonoBehaviour {
 			
 		}
 		if (Input.GetKey (KeyCode.A)) {
-			transform.localEulerAngles += new Vector3(0f, -5f, 0f);
+			transform.localEulerAngles += new Vector3(0f, -2.5f, 0f);
 			
 		}
 		if (Input.GetKey (KeyCode.D)) {
-			transform.localEulerAngles += new Vector3(0f, 5f, 0f); 
+			transform.localEulerAngles += new Vector3(0f, 2.5f, 0f); 
 			
 		}
 	}
