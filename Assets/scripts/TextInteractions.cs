@@ -132,6 +132,7 @@ public class TextInteractions : MonoBehaviour {
 						music1.SetActive(false);
 						music2.SetActive(true);
 						musicUnchanged=false;
+						ScoreManager.playerOneScore+=3;
 					}
 				}
 				else {
@@ -142,6 +143,7 @@ public class TextInteractions : MonoBehaviour {
 							music1.SetActive(false);
 							music2.SetActive(true);
 							musicUnchanged=false;
+							ScoreManager.playerTwoScore+=3;
 						}
 					}
 				}
