@@ -6,9 +6,8 @@ public class destroy : MonoBehaviour {
 
 	void OnCollisionEnter (Collision collision) {
 		if (collision.gameObject.tag == "Breakable") {
+			GetComponent<AudioSource>().Play();
 			Destroy (collision.gameObject);
-
-
 		}
 	}
 }

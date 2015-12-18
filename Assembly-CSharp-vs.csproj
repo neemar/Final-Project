@@ -61,7 +61,9 @@
      <Compile Include="Assets\scripts\Character sPEECH\GUY1.cs" />
      <Compile Include="Assets\scripts\Character sPEECH\scrollText.cs" />
      <Compile Include="Assets\scripts\GameManager.cs" />
+     <Compile Include="Assets\scripts\GetHit.cs" />
      <Compile Include="Assets\scripts\GetPointSound.cs" />
+     <Compile Include="Assets\scripts\HaloPulse.cs" />
      <Compile Include="Assets\scripts\InstructionTransition.cs" />
      <Compile Include="Assets\scripts\Inventory.cs" />
      <Compile Include="Assets\scripts\InventoryGUI.cs" />
@@ -81,6 +83,9 @@
      <Compile Include="Assets\scripts\ThrowObject.cs" />
      <Compile Include="Assets\scripts\arrowKeysMovement.cs" />
      <Compile Include="Assets\scripts\arrowelev.cs" />
+     <Compile Include="Assets\scripts\dancingHaha.cs" />
+     <Compile Include="Assets\scripts\dancingHehe.cs" />
+     <Compile Include="Assets\scripts\dancingHoho.cs" />
      <Compile Include="Assets\scripts\destroy.cs" />
      <Compile Include="Assets\scripts\destroyAnim.cs" />
      <Compile Include="Assets\scripts\endGame.cs" />

@@ -24,7 +24,7 @@ public class ThrowObject : MonoBehaviour {
 						hit.transform.parent = null;
 						hit.transform.GetComponent<Rigidbody>().constraints &= ~RigidbodyConstraints.FreezePosition;
 					}
-					hit.transform.GetComponent<Rigidbody>().AddForce (hit.transform.forward * 2000);
+					hit.transform.GetComponent<Rigidbody>().AddForce (transform.forward * 2000);
 				}
 				//if player two presses K
 				else {//(transform.tag == "PlayerTwo") {
@@ -37,7 +37,7 @@ public class ThrowObject : MonoBehaviour {
 						hit.transform.parent = null;
 						hit.transform.GetComponent<Rigidbody>().constraints &= ~RigidbodyConstraints.FreezePosition;
 					}
-					hit.transform.GetComponent<Rigidbody>().AddForce (hit.transform.forward * 2000);
+					hit.transform.GetComponent<Rigidbody>().AddForce (transform.forward * 2000);
 				}
 			}
 		}
