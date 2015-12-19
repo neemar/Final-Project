@@ -15,7 +15,6 @@ public class screenShake : MonoBehaviour {
 			int player = 0; 
 			StartCoroutine (shakeMe(player));
 			girlCamera.transform.position = marker.position; 
-
 			ObjectBreaking.girlGo = false; 
 		} 
 		else if (ObjectBreaking.boyGo) {
