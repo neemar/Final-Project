@@ -7,9 +7,7 @@ public class screenShake : MonoBehaviour {
 	public Transform boy; 
 	public Transform marker; 
 	public Transform boyMarker; 
-	void Start(){
-		 
-	}
+
 	void Update(){
 		if (ObjectBreaking.girlGo) {
 			int player = 0; 
