@@ -26,14 +26,14 @@ public class ObjectBreaking : MonoBehaviour {
 			ScoreManager.playerOneScore++;
 			playerOne = false; 
 			girlGo = true;
-			GetComponent<AudioSource>().Play ();
+			//GetComponent<AudioSource>().Play ();
 			//	Debug.Log (ScoreManager.playerOneScore);
 		}
 		else if (playerTwo == true) {
 			ScoreManager.playerTwoScore++;
 			playerTwo = false; 
 			boyGo = true; 
-			GetComponent<AudioSource>().Play ();
+			//GetComponent<AudioSource>().Play ();
 			//	Debug.Log (ScoreManager.playerTwoScore);
 		}
 		//Debug.Log ("destroyed");
