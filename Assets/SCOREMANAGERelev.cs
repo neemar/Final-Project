@@ -20,7 +20,7 @@ public class SCOREMANAGERelev : MonoBehaviour {
 		if (guy3.instance.donezo){
 			playerOneScore= playerOneScore+1 * Time.deltaTime;
 		
-		player1fill.fillAmount= playerOneScore/10f;
+		player1fill.fillAmount= playerOneScore/7f;
 	
 		
 		}}

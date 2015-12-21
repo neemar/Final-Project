@@ -209,9 +209,11 @@ IEnumerator AnimateText4(){
 	
 
 	void Update () {
+
 		float ewew1= Vector3.Distance(transform.position,person1.position);
 		float ewew3= Vector3.Distance(transform.position,person3.position);
 		float ewew4= Vector3.Distance(transform.position,person4.position);
+
 		chartext.text= (stringAnimate);
 		if (ewew1<=60f && notplaying1) {
 

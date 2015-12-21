@@ -53,6 +53,7 @@
      <Compile Include="Assets\Materials\Materials\Materials\Materials\balllllLsss.cs" />
      <Compile Include="Assets\Materials\Materials\elevatyor.cs" />
      <Compile Include="Assets\SCOREMANAGERelev.cs" />
+     <Compile Include="Assets\STUFF from MidtERM\throwobjectelev.cs" />
      <Compile Include="Assets\guy2.cs" />
      <Compile Include="Assets\guy3.cs" />
      <Compile Include="Assets\pmrr.cs" />
@@ -61,6 +62,7 @@
      <Compile Include="Assets\scripts\Character sPEECH\scrollText.cs" />
      <Compile Include="Assets\scripts\GameManager.cs" />
      <Compile Include="Assets\scripts\GetPointSound.cs" />
+     <Compile Include="Assets\scripts\HaloPulse.cs" />
      <Compile Include="Assets\scripts\InstructionTransition.cs" />
      <Compile Include="Assets\scripts\Inventory.cs" />
      <Compile Include="Assets\scripts\InventoryGUI.cs" />
