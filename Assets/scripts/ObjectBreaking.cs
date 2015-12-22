@@ -22,14 +22,14 @@ public class ObjectBreaking : MonoBehaviour {
 	
 	void OnDestroy() {
 		//destroy object and add score based on who touched the object last
-		if (playerOne == true) {
+		if (playerOne == true && transform.tag != "Flying") {
 			ScoreManager.playerOneScore++;
 			playerOne = false; 
 			girlGo = true;
 			//GetComponent<AudioSource>().Play ();
 			//	Debug.Log (ScoreManager.playerOneScore);
 		}
-		else if (playerTwo == true) {
+		else if (playerTwo == true && transform.tag != "Flying") {
 			ScoreManager.playerTwoScore++;
 			playerTwo = false; 
 			boyGo = true; 

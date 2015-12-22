@@ -25,7 +25,7 @@ public class OBJECTbreakingelev : MonoBehaviour {
 			playerOne = false;
 			playerTwo = true;
 			
-			guy3.instance.glassed= true;
+			guy2.instance.glassed2= true;
 
 		}
 	}

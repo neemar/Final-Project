@@ -13,10 +13,10 @@ public class guy3 : MonoBehaviour {
 
 	string myString9 = ("Hahaha! Well done! Have a great party!");
 	string myString7= ("Now press G to throw it again...");
-	string myString8 = ("Throwable stuff glows white! Press G to pick it up");
+	string myString8 = ("Throwable stuff glows BLUE ! Press G to pick it up");
 	string myString1 = ("Now, try picking up that pair of scissors");
 
-	string myString6 = ("Breakable stuff glows pink! Knock them over to get points.");
+	string myString6 = ("Breakable stuff glows RED ! Knock them over to get points.");
 	string myString5 = ("Use WASD to move. Try knocking over that glass!");
 	string stringAnimate = "";
 
@@ -53,9 +53,9 @@ public class guy3 : MonoBehaviour {
 			
 		}
 		
-		else if (donezo){
+		else if (donezo&&started){
 			StopAllCoroutines();
-			donezo= false;
+			started = false;
 			StartCoroutine(AnimateText66());
 
 			
@@ -146,10 +146,9 @@ public class guy3 : MonoBehaviour {
 			yield return null;
 			
 			yield return null;
-			Application.LoadLevel("dec11");
+			if (guy2.instance.donezo2 && guy3.instance.donezo){Application.LoadLevel("dec11");;
 			stringAnimate = "";
 		}
-	}
+		}}}
 
 
-}

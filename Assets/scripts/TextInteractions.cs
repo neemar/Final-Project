@@ -35,6 +35,7 @@ public class TextInteractions : MonoBehaviour {
 		if (Physics.Raycast (playerRay, out hit, 100f)) {
 			//npcTextPrefab.text = "LOL";
 			Debug.DrawRay ( playerRay.origin, playerRay.direction * hit.distance, Color.green);
+
 			if (hit.transform.gameObject.tag == "TV") {
 				//if playerone has scissors and presses K
 				if (transform.tag == "PlayerOne" && inventoryOne.Contains("Scissors")) {
@@ -83,6 +84,9 @@ public class TextInteractions : MonoBehaviour {
 				}
 			}
 			else if (hit.transform.gameObject.tag == "Pickupable") {
+
+			if (hit.transform.gameObject.tag == "Pickupable") {
+
 				if (transform.tag == "PlayerOne") {
 					//player one
 					npcTextPrefab.text = "Press G to pick up " + hit.transform.gameObject.name;
@@ -152,7 +156,11 @@ public class TextInteractions : MonoBehaviour {
 						music1.SetActive(false);
 						music2.SetActive(true);
 						musicUnchanged=false;
+
 						ScoreManager.playerOneScore+= 3;
+
+						ScoreManager.playerOneScore+=3;
+
 					}
 				}
 				else {
@@ -163,7 +171,11 @@ public class TextInteractions : MonoBehaviour {
 							music1.SetActive(false);
 							music2.SetActive(true);
 							musicUnchanged=false;
+
 							ScoreManager.playerTwoScore+= 3;
+
+							ScoreManager.playerTwoScore+=3;
+
 						}
 					}
 				}
@@ -235,4 +247,4 @@ public class TextInteractions : MonoBehaviour {
 			npcTextPrefab.text = "";
 		}
 	}
-	}}
+		}}}

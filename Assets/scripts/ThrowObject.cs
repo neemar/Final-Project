@@ -3,8 +3,12 @@ using System.Collections;
 
 public class ThrowObject : MonoBehaviour {
 
+	public Camera playerCam;
+	public Vector3 cameraStartPos;
+
 	bool holdingObject = false;
-	
+	bool threw = false;
+
 	// Update is called once per frame
 	void Update () {
 		//create raycast
@@ -15,31 +19,63 @@ public class ThrowObject : MonoBehaviour {
 			if (hit.transform.gameObject.tag == "Throwable") {
 				//if player one presses G
 				if (transform.tag == "PlayerOne") {
-					if (holdingObject == false && Input.GetKeyDown (KeyCode.K)) {
+					if (holdingObject == false && Input.GetKeyDown (KeyCode.G)) {
 						holdingObject = true;
 						hit.transform.parent = transform;
+						threw = false;
 					}
-					else if (holdingObject == true && Input.GetKeyDown (KeyCode.K)) {
+					else if (holdingObject == true && Input.GetKeyDown (KeyCode.G)) {
 						holdingObject = false;
 						hit.transform.parent = null;
+						hit.transform.tag = "Flying";
+						threw = true;
 						hit.transform.GetComponent<Rigidbody>().constraints &= ~RigidbodyConstraints.FreezePosition;
 					}
-					hit.transform.GetComponent<Rigidbody>().AddForce (hit.transform.forward * 2000);
+					hit.transform.GetComponent<Rigidbody>().AddForce (transform.forward * 2000);
 				}
 				//if player two presses K
 				else {//(transform.tag == "PlayerTwo") {
 					if (holdingObject == false && Input.GetKeyDown (KeyCode.K)) {
 						holdingObject = true;
+						threw = false;
 						hit.transform.parent = transform;
 					}
 					else if (holdingObject == true && Input.GetKeyDown (KeyCode.K)) {
-						holdingObject = false;
+						holdingObject = false; 
 						hit.transform.parent = null;
+						hit.transform.tag = "Flying";
+						threw = true;
 						hit.transform.GetComponent<Rigidbody>().constraints &= ~RigidbodyConstraints.FreezePosition;
 					}
-					hit.transform.GetComponent<Rigidbody>().AddForce (hit.transform.forward * 2000);
+					hit.transform.GetComponent<Rigidbody>().AddForce (transform.forward * 2000);
 				}
 			}
 		}
 	}
+	void OnCollisionEnter(Collision collision){
+		//Debug.Log ("Threw: " + threwObject);
+		//shake camera if player didnt throw object
+		if (collision.gameObject.tag == "Flying" && threw == false) {
+			cameraStartPos = playerCam.transform.position;
+			StartCoroutine (shake (10f));
+			playerCam.transform.position = cameraStartPos; //reset camera
+		}
+		threw = false;
+	}
+
+	IEnumerator shake (float shakePower) {
+		//transform.GetComponent<Rigidbody>().isKinematic = true;
+		float t = 5f; 
+		while (t > 0f) {
+			t -= Time.deltaTime / 0.5f;
+			Vector3 shakeVector = playerCam.transform.right * Mathf.Sin (Time.time * 50f)
+				+ playerCam.transform.up * Mathf.Sin (Time.time * 47f );
+			playerCam.transform.position = cameraStartPos + shakeVector * t * shakePower;
+			yield return 0;
+		}
+		//transform.GetComponent<Rigidbody>().isKinematic = false;
+		Debug.Log (playerCam.transform.position);
+	}
+		
+
 }
