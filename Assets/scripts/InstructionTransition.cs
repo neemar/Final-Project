@@ -12,7 +12,7 @@ public class InstructionTransition : MonoBehaviour {
 	void Update () {
 		if ( Input.GetKeyDown (KeyCode.Space) ) {
 			//then change to actual "Game" scene
-			Application.LoadLevel( "dec11" );
+			Application.LoadLevel( "PartyPooper" );
 		}
 	}
 }
