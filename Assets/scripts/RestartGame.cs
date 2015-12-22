@@ -26,6 +26,9 @@ public class RestartGame : MonoBehaviour {
 			
 			if (Input.GetKeyDown (KeyCode.Y)) {
 				Time.timeScale = 1f;
+				ScoreManager.playerOneScore = 0;
+				ScoreManager.playerTwoScore = 0;
+				LEFTobjInt.boyItems.Clear ();
 				Application.LoadLevel (Application.loadedLevel);
 			} 
 

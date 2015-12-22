@@ -6,6 +6,8 @@ public class ThrowObject : MonoBehaviour {
 	public Camera playerCam;
 	public Vector3 cameraStartPos;
 
+	public Transform playerMarker;
+
 	bool holdingObject = false;
 	bool threw = false;
 
@@ -56,25 +58,22 @@ public class ThrowObject : MonoBehaviour {
 		//Debug.Log ("Threw: " + threwObject);
 		//shake camera if player didnt throw object
 		if (collision.gameObject.tag == "Flying" && threw == false) {
-			cameraStartPos = playerCam.transform.position;
 			StartCoroutine (shake (10f));
-			playerCam.transform.position = cameraStartPos; //reset camera
+			playerCam.transform.position = playerMarker.position;
 		}
 		threw = false;
 	}
 
 	IEnumerator shake (float shakePower) {
-		//transform.GetComponent<Rigidbody>().isKinematic = true;
 		float t = 5f; 
 		while (t > 0f) {
 			t -= Time.deltaTime / 0.5f;
+			Vector3 cameraPosition = playerMarker.position;
 			Vector3 shakeVector = playerCam.transform.right * Mathf.Sin (Time.time * 50f)
 				+ playerCam.transform.up * Mathf.Sin (Time.time * 47f );
-			playerCam.transform.position = cameraStartPos + shakeVector * t * shakePower;
+			playerCam.transform.position = cameraPosition + shakeVector * t * shakePower;
 			yield return 0;
 		}
-		//transform.GetComponent<Rigidbody>().isKinematic = false;
-		Debug.Log (playerCam.transform.position);
 	}
 		
 
