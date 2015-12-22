@@ -148,41 +148,13 @@ public class TextInteractions : MonoBehaviour {
 					}
 				}
 			}
-			else if (hit.transform.gameObject.tag == "Wuhu") {
-				if (transform.tag == "PlayerOne" && cakecake){
-					npcTextPrefab.text = "Press G to clog the toilet with the cake!";
-					if (Input.GetKey (KeyCode.G)) {
-						npcTextPrefab.text = "You did it!";
-						ScoreManager.playerOneScore+=7;
-					}}
-
-
-				else if (transform.tag == "PlayerOne"&&!cakecake) {
-					//player one
-					npcTextPrefab.text = "There has to be something important to flush away";
-					
+	
 					
 
-				}
-				else if (transform.tag == "PlayerTwo" && cakecake){
-					npcTextPrefab.text = "Press K to clog the toilet with the cake!";
-					if (Input.GetKey (KeyCode.G)) {
-						npcTextPrefab.text = "You did it!";
-						ScoreManager.playerTwoScore+=7;
-					}}
-						
-						
-						else if (transform.tag == "PlayerTwo"&& !cakecake) {
-							//player one
-							npcTextPrefab.text = "There has to be something important to flush away";
-							
-							
-						}
-					
-			}
 		//if not in range of anything/anyone, set text to nothing
 		else {
 			npcTextPrefab.text = "";
 		}
 	}
-	}}
+	}
+}
