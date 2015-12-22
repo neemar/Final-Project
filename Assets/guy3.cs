@@ -11,12 +11,12 @@ public class guy3 : MonoBehaviour {
 	public bool  donezo= false;
 	public bool started= false;
 
-	string myString9 = ("Hahaha! Thank you! Have a great party!");
-	
-	string myString8 = ("Give it to me....");
+	string myString9 = ("Hahaha! Well done! Have a great party!");
+	string myString7= ("Now press G to throw it again...");
+	string myString8 = ("Throwable stuff glows BLUE ! Press G to pick it up");
 	string myString1 = ("Now, try picking up that pair of scissors");
 
-	string myString6 = ("Breakable stuff glows pink! Knock them over to get points.");
+	string myString6 = ("Breakable stuff glows RED ! Knock them over to get points.");
 	string myString5 = ("Use WASD to move. Try knocking over that glass!");
 	string stringAnimate = "";
 
@@ -39,22 +39,25 @@ public class guy3 : MonoBehaviour {
 		}
 		else if (glassed&&!picked&&started){
 			StopAllCoroutines();
-			started=false;
+
 			StartCoroutine(AnimateText555555555555());
-			
+			glassed= false;
 		}
 		
-		else if (picked&!started){
+		else if (picked&&!glassed){
 			StopAllCoroutines();
-			StartCoroutine(AnimateText8());
+			StartCoroutine(AnimateText88());
 			started=true;
+			picked=false;
+
 			
 		}
 		
-		else if (donezo&picked){
+		else if (donezo&&started){
 			StopAllCoroutines();
+			started = false;
 			StartCoroutine(AnimateText66());
-			picked= false;
+
 			
 		}
 		
@@ -62,6 +65,12 @@ public class guy3 : MonoBehaviour {
 	IEnumerator AnimateText9(){
 		for (int i = 0; i < myString9.Length; i++) {
 			stringAnimate += myString9[i]; 
+			yield return new WaitForSeconds(0.05f); 
+		}
+	}
+	IEnumerator AnimateText7(){
+		for (int i = 0; i < myString7.Length; i++) {
+			stringAnimate += myString7[i]; 
 			yield return new WaitForSeconds(0.05f); 
 		}
 	}
@@ -91,7 +100,21 @@ public class guy3 : MonoBehaviour {
 			yield return new WaitForSeconds(0.05f); 
 		}
 	}
-	
+	IEnumerator AnimateText88(){
+		while (true){
+			stringAnimate = "";
+			yield return StartCoroutine(AnimateText8());
+			
+			yield return new WaitForSeconds(2f); 
+			
+			stringAnimate = "";
+			yield return StartCoroutine(AnimateText7());
+			
+			yield return new WaitForSeconds(2f); 
+			
+			stringAnimate = "";
+		}
+	}
 	IEnumerator AnimateText555555555555(){
 		while (true){
 			stringAnimate = "";
@@ -115,11 +138,17 @@ public class guy3 : MonoBehaviour {
 			
 	
 
-			yield return new WaitForSeconds(3f); 
-			Application.LoadLevel("dec10ug");
+			yield return null;
+			yield return null;
+			yield return null;
+			yield return null;
+			yield return null;
+			yield return null;
+			
+			yield return null;
+			if (guy2.instance.donezo2 && guy3.instance.donezo){Application.LoadLevel("dec11");;
 			stringAnimate = "";
 		}
-	}
+		}}}
 
 
-}

@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class GUY1 : MonoBehaviour {
 
-	public Transform person;
 	public Transform person1;
 	public Transform person2;
 	public Transform person3;
@@ -20,11 +19,11 @@ public class GUY1 : MonoBehaviour {
 
 	public bool notplaying= true;
 	public bool notplaying1= true;
-	public bool notplaying2= true;
+	public bool noplaying2= true;
 	public bool notplaying3= true;
 	public bool notplaying4= true;
-	public bool notplaying5= true;
-	public bool notplaying6= true;
+	public bool noplaying5= true;
+	public bool noplaying6= true;
 	public bool secondperson= false;
 
 
@@ -47,11 +46,11 @@ void Start(){
 
 		notplaying= true;
 		 notplaying1= true;
-		notplaying2= true;
+		noplaying2= true;
 		 notplaying3= true;
 		 notplaying4= true;
-	 notplaying5= true;
-		notplaying6= true;
+	 noplaying5= true;
+		noplaying6= true;
 	}
 
 	IEnumerator AnimateText5(){
@@ -131,6 +130,7 @@ IEnumerator AnimateText4(){
 
 	IEnumerator AnimateText4444444(){
 		while (true){
+			noplaying6=false;
 			stringAnimate = "";
 			yield return StartCoroutine(AnimateText4());
 			
@@ -141,7 +141,8 @@ IEnumerator AnimateText4(){
 			
 			yield return new WaitForSeconds(1f); 
 			stringAnimate = "";
-			
+			noplaying6=true;
+			StopAllCoroutines();
 		}}
 
 	IEnumerator AnimateText3(){
@@ -164,6 +165,7 @@ IEnumerator AnimateText4(){
 	
 	IEnumerator AnimateText3333(){
 		while (true){
+			noplaying5=false;
 			stringAnimate = "";
 			yield return StartCoroutine(AnimateText3());
 			
@@ -174,7 +176,9 @@ IEnumerator AnimateText4(){
 			
 			yield return new WaitForSeconds(1f); 
 			stringAnimate = "";
-			
+			noplaying5=true;
+			StopAllCoroutines();
+
 		}}
 	
 	IEnumerator AnimateText1(){
@@ -194,6 +198,7 @@ IEnumerator AnimateText4(){
 	
 	IEnumerator AnimateText111(){
 		while (true){
+			noplaying2= false;
 			stringAnimate = "";
 			yield return StartCoroutine(AnimateText1());
 			
@@ -202,55 +207,66 @@ IEnumerator AnimateText4(){
 			stringAnimate = "";
 			yield return StartCoroutine(AnimateText11());
 			
+			
 			yield return new WaitForSeconds(1f); 
-			stringAnimate = "";
-
+			noplaying2= true;
+			StopAllCoroutines();stringAnimate = "";
 		}}
 	
 
 	void Update () {
+
 		float ewew1= Vector3.Distance(transform.position,person1.position);
 		float ewew3= Vector3.Distance(transform.position,person3.position);
 		float ewew4= Vector3.Distance(transform.position,person4.position);
+
 		chartext.text= (stringAnimate);
-		if (ewew1<=60f && notplaying1) {
+		if (ewew1<60f && notplaying1) {
 
 			StartCoroutine( AnimateText111());
-			notplaying1 = false;
+			notplaying1 = false;}
+
 			 if (ewew1>60f) {
-				StopAllCoroutines();
+			StopCoroutine(AnimateText111());
+			StopCoroutine(AnimateText1());
+			StopCoroutine(AnimateText11());
 				notplaying1=true;
 
-				stringAnimate = "";
-			}}
+
+			}
 	
 		if (ewew3<60f && notplaying3) {
 			
 			StartCoroutine( AnimateText3333());
-	notplaying3 = false;
+			notplaying3 = false;}
+
 			if (ewew3>60f) {
-				StopAllCoroutines();
+				StopCoroutine(AnimateText3333());
+			StopCoroutine (AnimateText3());
+			StopCoroutine(AnimateText33());
 				notplaying3=true;
 
-				stringAnimate = "";
+				
 			}
-		}
+
 		if (ewew4<60f && notplaying4) {
 			
 			StartCoroutine( AnimateText4444444());
-			notplaying4 = false;
+			notplaying4 = false;}
 			if (ewew4>60f) {
-				StopAllCoroutines();
+				StopCoroutine(AnimateText4444444());
+			StopCoroutine(AnimateText44());
+			StopCoroutine(AnimateText4());
 				notplaying4=true;
 				
-				stringAnimate = "";
+
 			}
 		}
 
 
 
 
-	}}
+	}
 	
 	
 	
